@@ -1,0 +1,508 @@
+	\setlength{\abovedisplayskip}{0em}
+	\setlength{\belowdisplayskip}{0em}
+	
+	\section*{集合基础概念}
+	\textbf{子集}：$B \subseteq A \Leftrightarrow \forall x (x \in B \rightarrow x \in A)$
+	
+	\textbf{非子集}：$B \nsubseteq A \Leftrightarrow \exists x (x \in B \land x \notin A)$
+	
+	\textbf{相等}：$A = B \Leftrightarrow \forall x (x \in B \leftrightarrow x \in A) \Leftrightarrow A \subseteq B \land B \subseteq A$
+	
+	\textbf{真子集}：$A \subset B \Leftrightarrow A \subseteq B \land A \neq B$
+	
+	\textbf{非真子集}：$A \not\subset B \Leftrightarrow \exists x (x \in A \land x \notin B) \lor A = B$
+	
+	\textbf{空集}：$\emptyset = \{x | x \neq x\}$，是一切集合的子集；唯一
+	
+	\textbf{全集$E$}：与具体问题相关，不唯一
+	
+	\textbf{幂集}：$P(A) = 2^{A} = \{x | x \subseteq A\}$，易知$|P(A)| = 2^n$
+	
+	\textbf{ｎ元集}：A有n个元素，记作$|A| = n$
+	
+	\textbf{有穷集（有限集）}：A的元素个数有限
+	
+	\textbf{并集}：$A \cup B = \{x | x \in A \lor x \in B\}$
+	
+	\textbf{初级并}：$A_1 \cup A_2 \cup \ldots \cup A_n = \{x | \exists i (1 \leq i \leq n \land x \in A_i)\}$，$\bigcup_{i=1}^n A_i = A_1 \cup A_2 \cup \ldots \cup A_n$，$\bigcup_{i=1}^\infty A_i = A_1 \cup A_2 \cup \ldots$
+	
+	\textbf{交集}：$A \cap B = \{x | x \in A \land x \in B\}$
+	
+	\textbf{初级交}：$A_1 \cap A_2 \cap \ldots \cap A_n = \{x | \forall i (1 \leq i \leq n \rightarrow x \in A_i)\}$，$\bigcap_{i=1}^n A_i = A_1 \cap A_2 \cap \ldots$，$\bigcap_{i=1}^\infty A_i = A_1 \cap A_2 \cap \ldots$
+	
+	\textbf{不相交}：设 $A_1, A_2, \ldots$ 是可数多个集合，对于任意的 $i \neq j$，都有 $A_i \cap A_j = \emptyset$，则称 $A_1, A_2, \ldots$ 是互不相交的
+	
+	\textbf{相对补集}：只属于 $A$ 而不属于 $B$ 的全体元素组成的集合为 $B$ 对 $A$ 的相对补集。$A - B = \{x | x \in A \land x \notin B\} = A \cap \sim B$
+	
+	\textbf{对称差}：$A \bigoplus B = \{x | (x \in A \land x \notin B) \lor (x \notin A \land x \in B)\} = (A - B) \cup (B - A) = (A \cup B) - (A \cap B)$
+		
+	\textbf{绝对补集}：$\sim A = \{x | x \in E \land x \notin A\} = E - A = \{x | x \notin A\}$
+	
+	\textbf{广义并}：$\bigcup A = \{x | \exists z (x \in z \land z \in A)\}$, $A$是集族（即A的元素是集合）；$\bigcup \emptyset = \emptyset$
+	
+	\textbf{广义交}：$\bigcap A = \{x | \forall z (z \in A \rightarrow x \in z)\}$, $A$是集族且\textbf{非空}——理论上$\bigcap \emptyset$包含任意元素，即包含所有集合，这在集合论中无意义\\
+	·$\{x | \forall z (z \in A \rightarrow x \in P(z))\}=\cap\{P(z)|z\in A\}$
+	
+	\textbf{集合运算的优先级}：一元运算优先于二元运算
+	
+	·第一类运算/一元运算(从右向左)：\textbf{绝对补、幂集、广义交/并}
+	
+	·第二类运算/二元运算(从左向右)：\textbf{初级并/交、相对补、对称差}
+	
+	\section*{二元关系}
+	\textbf{有序对}：由两个元素 $x$ 和 $y$ (允许 $x = y$) 按照一定顺序排列而成的二元组称作一个有序对，记作 $\langle x, y \rangle := \{\{a\}, \{a, b\}\}$
+	
+	·$x \neq y \Rightarrow \langle x, y \rangle \neq \langle y, x \rangle$\\
+	·$\langle a, b \rangle = \langle c, d \rangle \Leftrightarrow a = c \land b = d$
+	
+	\textbf{笛卡尔积（卡式积）}：设 $A, B$ 为集合，用 $A$ 中元素为第一元素，$B$ 中元素为第二元素构成有序对。所有这样的有序对组成的集合称作 $A$ 和 $B$ 的笛卡尔积，记作 $A \times B:=\{ \langle x, y \rangle | x \in A \land y \in B \}$
+	
+	\textbf{笛卡尔积性质}\\
+	·非交换$A \times B \neq B \times A$【除非$A = \emptyset \lor B = \emptyset \lor A = B$】\\	
+	·非结合$(A \times B) \times C \neq A \times (B \times C)$【除非$A = \emptyset \lor B = \emptyset \lor C = \emptyset$】\\	
+	·对并和交满足分配律：
+	\begin{itemize}
+		\item[·] $A \times (B \cup C) = (A \times B) \cup (A \times C)$
+		\item[·] $(B \cup C) \times A = (B \times A) \cup (C \times A)$
+		\item[·] $A \times (B \cap C) = (A \times B) \cap (A \times C)$
+		\item[·] $(B \cap C) \times A = (B \times A) \cap (C \times A)$
+	\end{itemize}
+
+	·$A \times \emptyset = \emptyset, \emptyset \times A = \emptyset$\\
+	·$A \times B = \emptyset \Leftrightarrow A = \emptyset \lor B = \emptyset$\\
+	·若 $A \neq \emptyset$, 则 $A \times B \subseteq A \times C \Leftrightarrow B \subseteq C$\\
+	·$A \subseteq C \land B \subseteq D \Rightarrow A \times B \subseteq C \times D$【当$(A = B = \emptyset) \lor (A \neq \emptyset \land B \neq \emptyset)$ 时，逆命题成立】
+	
+	\textbf{n元关系}：元素全是有序n元组【或为空集】的集合\\
+	\textbf{二元关系（关系）}：$n=2$的情形，记作 $R$\\
+	·记号：$\langle x, y \rangle \in R \Leftrightarrow R(x,y), Rxy \Leftrightarrow x R y$\\
+	·若 $\langle x, y \rangle \notin R$，记作 $x \not\sim R y$。
+	
+	\textbf{A到B的二元关系}：$A \times B$ 的任何子集（含空集）$\Leftrightarrow \quad R \subseteq A \times B \quad \Leftrightarrow \quad R \in \mathcal{P}(A \times B)$\\
+	·$A$到$B$不同的二元关系有$2^{|A|\cdot|B|}$个\\
+	·当 $A = B$ 时称作 $A$ 上的二元关系
+	
+	\textbf{特殊关系}：对于任何集合 $A$：\\
+	·\textbf{空关系}：$\emptyset$ \\
+	·\textbf{全域关系}：$E_A = \{ \langle x, y \rangle | x \in A \land y \in A \} = A \times A$ \\
+	·\textbf{恒等关系}：$I_A = \{ \langle x, x \rangle | x \in A \}$ \\
+	·\textbf{小于等于关系}：$LE_A = \{ \langle x, y \rangle | x, y \in A, x \leq y \}$ \\
+	·\textbf{整除关系}：$D_A = \{ \langle x, y \rangle | x, y \in A, x | y \}$ \\
+	·\textbf{包含关系}：$R_{\subseteq} = \{ \langle x, y \rangle | x, y \in A, x \subseteq y\}$\\
+	·\textbf{真包含关系}：$R_{\subset} = \{ \langle x, y \rangle | x, y \in A, x \subset y\}$
+		
+	\textbf{关系矩阵}：$M(R)=[r_{ij}]_{n\times n}$，若 $x_i$ 与 $x_j$ 有关系则 $r_{ij}$ 为 1，否则为 0。
+	
+	\textbf{关系图}：$\langle x_i, x_j \rangle \in R$对应图 $G_R$ 中$x_i$ 到 $x_j$ 的有向边
+	
+	·集合表达式、关系矩阵、关系图三者可唯一互相确定。
+	
+	\textbf{逆关系}：$R^{-1} = \{ \langle x, y \rangle \mid \langle y, x \rangle \in R \}$\\
+	\textbf{右复合}：$F \circ G = \{ \langle x, y \rangle \mid \exists t (\langle x, t \rangle \in F \land \langle t, y \rangle \in G) \}$
+	
+	\textbf{定义域}：$R$ 中所有有序对的第一元素构成的集合称作 $R$ 的定义域，记作 $\text{dom} R$，即 $\text{dom} R = \{ x \mid \exists y (\langle x, y \rangle \in R) \}$\\
+	\textbf{值域}：$R$ 中所有有序对的第二元素构成的集合称作 $R$ 的值域，记作 $\text{ran} R$，即 $\text{ran} R = \{ y \mid \exists x (\langle x, y \rangle \in R) \}$\\
+	\textbf{域}：$R$ 的定义域和值域的并集为域，记作 $\text{fld} R$，即 $\text{fld} R = \text{dom} R \cup \text{ran} R$
+	
+	\textbf{限制}：$R$ 在 $A$ 上的限制记作 $R \uparrow A$，即 $R \uparrow A = \{ \langle x, y \rangle \mid x R y \land x \in A \} \subseteq R$\\
+	\textbf{像}：$A$ 在 $R$ 上的像记作 $R[A]$，即 $R[A] = \text{ran}(R \uparrow A) = \{ y \mid \exists x (x \in A \land x F y) \} \subseteq \text{ran} R$
+	
+	\textbf{幂运算}：$R$的$n$次幂
+	\begin{itemize}
+		\item[·] $R^0 = \{ \langle x, x \rangle \mid x \in A \} = I_A$
+		\item[·] $R^{n+1} = R^n \circ R$
+	\end{itemize}
+	
+	\textbf{关系运算的顺序}\\
+	·逆运算优先于其他运算\\
+	·关系运算（逆、合成、限制、像）优先于集合运算（交并补、相对补、对称差等）\\
+	·没有规定优先权的运算以括号决定运算顺序
+	
+	\textbf{自反}：设 $R$ 为 $A$ 上的关系，$R$ 在 $A$ 上是自反的 $\Leftrightarrow \forall x (x \in A \rightarrow \langle x, x \rangle \in R) \Leftrightarrow (\forall x \in A) xRx$\\
+	\textbf{非自反}：自反的否定，定义空关系非自反\\
+	\textbf{反自反}：称 $R$ 在 $A$ 上是反自反的，若 $\forall x (x \in A \rightarrow \langle x, x \rangle \notin R)$
+	
+	\textbf{对称}：若 $\forall x \forall y (x, y \in A \land \langle x, y \rangle \in R \to \langle y, x \rangle \in R)$，则称 $R$ 为 $A$ 上对称的关系\\
+	\textbf{反对称}：若 $\forall x \forall y (x, y \in A \land \langle x, y \rangle \in R \land \langle y, x \rangle \in R \to x=y)$，则称 $R$ 为 $A$ 上反对称的关系
+	
+	\textbf{传递}：$\forall x \forall y \forall z (x, y, z \in A \land \langle x, y \rangle \in R \land \langle y, z \rangle \in R \to \langle x, z \rangle \in R)$【若两步能到，一步一定能到】
+	
+	\textbf{自反/对称/传递闭包}：要求 $A$ 非空，$R$ 的$××$闭包是 $A$ 上的关系 $R'$满足$R \subseteq R'$、$××$性、极小性；分别记作$r(R), s(R), t(R)$\\
+	·极小性的表示：$\forall S ((R \subseteq S \land S \text{自反}) \rightarrow r(R) \subseteq S)$
+	
+	\textbf{等价关系}：设 $R$ 为非空集合 $A$ 上的关系，若 $R$ 是自反、对称、传递的，则称 $R$ 为 $A \text{上的等价关系}$\\
+	·设 $R$ 为一个等价关系，若 $\langle x, y \rangle \in R$，则称 $x$ 等价于 $y$，记作 $x \sim y$。空关系不是等价关系。
+	
+	\textbf{等价类}：设 $R$ 为非空集合 $A$ 上的等价关系，$\forall x \in A$，令 $[x]_R = \{ y \mid y \in A \land x R y \}$，称 $[x]_R$ 为 $x$ 关于 $R$ 的等价类，简记为 $[x]$
+	
+	\textbf{商集}：设 $R$ 为非空集合 $A$ 上的等价关系，$R$ 的所有等价类组成的集合是 $A$ 关于 $R$ 的商集，记作 $A/R$，即$A/R = \{ [x]_R \mid x \in A \} \quad \text{（是一个集族）}$\\
+	·显然$\cup A/R=A$
+	
+	\textbf{划分}：$A \neq \emptyset$ 的一个划分是 $A$ 的子集族 $\mathcal{A} \subseteq P(A)$ 满足：$\emptyset \notin \mathcal{A},~ \forall x \forall y (x, y \in \mathcal{A} \land x \neq y \to x \cap y = \emptyset),~ \bigcup \mathcal{A} = A$，称 $\mathcal{A}$ 中的元素为 $A$ 的划分块。\\	
+	·$R$\text{是}$A$ 上的等价关系 $\Rightarrow$ 商集 $A/R$ 是 $A$ 的划分\\
+	·$\mathcal{A}$\text{是}$A$\text{的划分}$\Leftrightarrow$\text{同块关系} $R_{\mathcal{A}}$是$A$上的等价关系\\	
+	·注：求所有等价关系时并上$I_A$（自反性）
+	
+	\textbf{Stirling\text{子集数}}：记$f[n][k]$\text{为}n个不同元素划分为k组的方法数, $f[n][0]=0, f[n][1]=1, f[n][2]=2^{n-1}-1, f[n][n-1]=C^2_n, f[n][n]=1, f[n][k]=kf[n-1][k]+f[n-1][k-1]$\\
+	·$\Sigma f[3][k]=5, \Sigma f[4][k]=15$
+	
+	\textbf{偏序关系}：设 $A \neq \varnothing, R \subseteq A \times A$，若 $R$ 是自反、反对称、传递的，则称 $R$ 为 $A$ 的偏序关系，记作 $\preccurlyeq$。设 $\preccurlyeq$ 为偏序关系，如果 $\langle x, y \rangle \in \preccurlyeq$，则记作 $x \preccurlyeq y$\\
+	·自反时证反对称：$xRy \land yRx \Rightarrow x=y$
+	
+	\textbf{偏序集}：$\preccurlyeq$\text{是}$A$上的偏序关系，称 $\langle A, \preccurlyeq \rangle$为偏序集
+	
+	设  $\langle A, \preccurlyeq \rangle$为偏序集，$x, y \in A$，定义：\\	
+	·$x$\text{与}$y$\textbf{可比}：若$x \preccurlyeq y \lor y \preccurlyeq x$\\
+	·\textbf{严格小于}：$x \prec y \Leftrightarrow x \preccurlyeq y \land x \neq y$\\
+	·\textbf{覆盖}：称$y$覆盖$x$，若 $x \prec y$，且不存在 $z$，使得 $x \prec z \prec y$\\
+	·对任意两个元素 $x, y$，有四种情况必发生其中恰好一种：$x \prec y$，$y \prec x$，$x = y$，$x$ 与 $y$ 不是可比的
+	
+	\textbf{哈斯图}：$\forall x, y \in A$，若 $x \prec y$，则将 $x$ 画在 $y$ 下方；对于 $A$ 中两个不同的元素 $x$ 和 $y$，若 $y$ 覆盖 $x$，就用一条线段连接 $x$ 和 $y$\\
+	·省略自反性、传递性及反对称性的箭头
+	
+	\textbf{全序关系（线序关系）}：设 $\langle A, \preccurlyeq \rangle$ 为偏序集，若 $\forall x, y \in A$，$x$ 与 $y$ 都是可比的，则 $R$ 为 $A$ 上的全序关系（哈斯图是一根线）
+	
+	\textbf{拟序关系}：设 $R$ 为非空集合 $A$ 上的关系。若 $R$ 是反自反、传递的，则称 $R$ 为 $A$ 上的拟序关系，常用 $\prec$ 表示拟序关系，$\langle A, \prec \rangle$ 为拟序集。\\
+	·反自反性与传递性蕴涵反对称性
+	
+	\textbf{最/极大/小元}：设 $\langle A, \preccurlyeq \rangle$ 为偏序集，$B \subseteq A, y \in B$
+	\begin{itemize}
+		\item[·] 若 $\forall x (x \in B \to y \preccurlyeq x)$成立，则称$y$\text{为}$B$ 的最小元【可以无必唯一】
+		\item[·] 若 $\forall x (x \in B \land x \preccurlyeq y \to x = y)$\text{成立，则称}$y$\text{为}$B$ 的极小元【必存在不唯一，不大于任何元】
+	\end{itemize}
+	
+	\textbf{上/下界}：设 $\langle A, \preccurlyeq \rangle$ 为偏序集，$B \subseteq A, y \in A$
+	\begin{itemize}
+		\item[·] 若 $\forall x (x \in B \to x \preccurlyeq y)$ 成立，则称 $y$\text{为}$B$ 的上界【可以无不唯一】
+		\item[·] 令 $C = \{ y \mid y \text{为} B \text{的上界} \}$，则称 $C$ 的最小元为 $B$ 的最小上界或上确界【可以无必唯一】
+		\item[·] 上界与下界不一定存在集合之中
+		\item[·] 集合的最小元素是它的下确界，最大元素就是它的上确界；反之不对
+	\end{itemize}
+	
+	\textbf{函数（映射）}：单值的二元关系$F$，若 $\forall x \in \text{dom} F$ 都存在唯一的 $y \in \text{ran} F$ 使得 $xFy$ 成立（单值）\\
+	·记号：$F(x) = y \Leftrightarrow \langle x, y \rangle \in F \Leftrightarrow x F y$\\
+	·证单值：$\forall x \in \text{dom} F, \forall y, z \in \text{ran} F, x F y \land x F z \rightarrow y = z$
+	
+	\textbf{偏函数（部分函数）}：若 $\text{dom} F \subseteq A \land \text{ran} F \subseteq B$，则 $F$ 称为从 $A$ 到 $B$ 的偏函数，$A$ 称为 $F$ 的前域，$B$ 称为 $F$ 的后域，记作\\
+	·\textbf{偏函数计数}：$(|B|+1)^{|A|}$
+	
+	\textbf{全函数（函数）}：若 $\text{dom} f = A \land \text{ran} f \subseteq B$，则 $f$ 称为从 $A$ 到 $B$ 的函数，记作 $f: A \rightarrow B$\\
+	·所有从 $A$ 到 $B$ 的函数的集合记作 $B^A$，读作“$B$ 上 $A$”；$B^A = \{ f \mid f: A \rightarrow B \}$；$|B^A| = |B|^{|A|}$\\
+	·当 $A = \emptyset$ 时，$B^A = \{ \emptyset \}$，$|B^A| = 1$\\
+	·当 $A \neq \emptyset \land B = \emptyset$ 时，$B^A = \emptyset$，$|B^A| = 0$
+		
+	\textbf{单射、满射、双射}：设 $f: A \rightarrow B$
+	\begin{itemize}
+		\item[·] 若 $\text{ran} f = B$，则称 $f$ 为满射
+		\item[·] 若 $\forall y \in \text{ran} f$ 都存在唯一的 $x \in A$ 使得 $f(x) = y$，则称 $f$ 为单射
+		\item[·] 若 $f$ 既单射又满射，则 $f$ 为双射（一一对应）
+	\end{itemize}
+	\textbf{单射、满射、双射计数}：设$|A|=n, |B|=m$
+	\begin{itemize}
+		\item[·] $n<m$时，单射个数$m!/(m-n)!$
+		\item[·] $n>m$时，满射个数$m!f[n][m]$
+		\item[·] $n=m$时，单/满/双射个数$n!$
+	\end{itemize}
+	
+	\textbf{常数函数} 设 $f: A \rightarrow B$，若存在 $c \in B$ 使得对所有 $x \in A$ 都有 $f(x) = c$，则称 $f$ 为常数函数\\
+	\textbf{恒等函数}：称 $A$ 上的恒等关系 $I_A: A\rightarrow A$ 为 $A$ 上的恒等函数，$I_A(x) = x$\\
+	\textbf{特征函数}：$A$ 的特征函数 $\chi_{A}: E \rightarrow \{0, 1\}$ 定义为$\chi_{A}(x) = 1\text{ if } a \in A$，否则为$0$\\
+	·当 $\emptyset \subset A \subset E$ 时，$\chi_{A}$ 是满射
+	
+	\textbf{单调函数}：\text{设}$\langle A, \leqslant_A \rangle, \langle B, \leqslant_B
+	 \rangle$ 为偏序集，$f: A \rightarrow B$，若$\forall x_1, x_2 \in A$，$x_1 \leqslant_A x_2 \Rightarrow f(x_1) \leqslant_B f(x_2)$，则称 $f$单调递增\\
+	·\text{严格单调}：\text{把}$\leqslant$\text{换成}$<$，要求$f$是单射
+	
+	
+	\textbf{自然映射（典型映射）}：设 $R$ 是 $A$ 上的等价关系，令 $f: A \rightarrow A/R$，$f(x) = [x]_R, \forall a \in A$，称 $f$ 是从 $A$ 到商集 $A/R$ 的自然映射\\
+	·不同的等价关系确定不同的自然映射，恒等关系确定的是双射，其他自然映射一般只是满射
+	
+	\hrule
+	
+	\section*{计数问题}	
+	
+	\textbf{文氏图}：大矩形表示全集 $E$（可省略），在矩形内部画圆，用圆或其他闭曲线的内部表示集合。不同的圆代表不同的集合，并将运算结果得到的集合用阴影部分表示——计数问题：
+	
+	1. 画文氏图，一般每个集合对应一种性质
+	
+	2. 计算各区域的数量，有未知的则列方程
+	
+	\textbf{包含排斥原理（容斥原理）} 设 $A_1, A_2, \ldots, A_n$ 为 $n$ 个集合，则
+	\fontsize{4pt}{4pt}
+	\begin{equation*}
+		\left| \bigcup_{i=1}^{n} A_i \right| = \sum_{i=1}^{n} |A_i| - \sum_{i<j}|A_i \cap A_j| + \sum_{i<j<k}|A_i \cap A_j \cap A_k| - \cdots + (-1)^{n-1}|A_1 \cap A_2 \cap \cdots \cap A_n|
+	\end{equation*}
+	\fontsize{6pt}{6pt}
+	
+	\section*{集合恒等式}	
+	
+	\textbf{幂等律} $A \cup A = A$，$A \cap A = A$
+	
+	\textbf{交换律} $A \cup B = B \cup A$，$A \cap B = B \cap A$
+	
+	\textbf{结合律} $(A \cup B) \cup C = A \cup (B \cup C)$，$(A \cap B) \cap C = A \cap (B \cap C)$
+	
+	\textbf{分配律} $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$，$A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
+	
+	\textbf{德摩根律} 
+	
+	相对形式：$E - (A \cup B) = (E - A) \cap (E - B)$，$E - (A \cap B) = (E - A) \cup (E - B)$
+	
+	绝对形式：$\sim(A \cup B) = \sim A \cap \sim B$，$\sim(A \cap B) = \sim A \cup \sim B$
+		
+	\textbf{吸收律} $A \cup (A \cap B) = A$，$A \cap (A \cup B) = A$
+	
+	\textbf{零律} $A \cup E = E$，$A \cap \emptyset = \emptyset$
+	
+	\textbf{同一律} $A \cup \emptyset = A$，$A \cap E = A$
+		
+	\textbf{排中律} $A \cup \sim A = E$
+	
+	\textbf{矛盾律} $A \cap \sim A = \emptyset$
+		
+	\textbf{余补律} $\sim \emptyset = E$，$\sim E = \emptyset$
+	
+	\textbf{双重否定律} $\sim(\sim A) = A$
+	
+	\textbf{补交转换律} $A - B = A \cap \sim B$（消去差集运算符）
+	
+	对于集合定律的证明应该使用数理逻辑
+
+	\textbf{子集的性质}
+	\begin{itemize}
+		\item[·] $A \subseteq B \Rightarrow (A \cup C) \subseteq (B \cup C)$
+		\item[·] $A \subseteq B \Rightarrow (A \cap C) \subseteq (B \cap C)$
+		\item[·] $(A \subseteq B) \wedge (C \subseteq D) \Rightarrow (A \cup C) \subseteq (B \cup D)$
+		\item[·] $(A \subseteq B) \vee (C \subseteq D) \Rightarrow (A \cap C) \subseteq (B \cap D)$
+		\item[·] $(A \subseteq B) \wedge (C \subseteq D) \Rightarrow (A - C) \subseteq (B - D)$
+		\item[·] $C \subseteq D \Rightarrow (A - D) \subseteq (A - C)$
+	\end{itemize}
+	
+	\textbf{差集的性质}
+	\begin{itemize}
+		\item[·] $A - B = A - (A \cap B)$
+		\item[·] $A - B = A \cap \sim B$
+		\item[·] $A \cup (B - A) = A \cup B$
+		\item[·] $A \cap (B - C) = (A \cap B) - C$
+	\end{itemize}
+	
+	\textbf{对称差的性质}
+	\begin{itemize}
+		\item[·] 交换律，结合律
+		\item[·] 分配律：$A \cap (B \bigoplus C) = (A \cap B) \bigoplus (A \cap C)$
+		\item[·] ~~~~~：$A \bigoplus (A \bigoplus B) = B$
+		\item[·] 同一律：$A \bigoplus \emptyset = A$
+		\item[·] 零律：$A \bigoplus A = \emptyset$
+	\end{itemize}
+	
+	\textbf{幂集的性质}
+	\begin{itemize}
+		\item[·] $A \subseteq B \Leftrightarrow P(A) \subseteq P(B)$
+		\item[·] $A = B \Leftrightarrow P(A) = P(B)$
+		\item[·] $P(A) \in P(B) \Rightarrow A \in B$
+		\item[·] $P(A) \cap P(B) = P(A \cap B)$
+		\item[·] $P(A) \cup P(B) \subseteq P(A \cup B)$
+		\item[·] $P(A - B) \subseteq (P(A) - P(B)) \cup \{\emptyset\}$
+		\item[·] $A \subseteq P(A)$; $\cup P(A) = A$
+		\item[·] $\{x\} \in P(A) \Leftrightarrow x \in A$
+		\item[·] $x \in P(A) \Leftrightarrow x \subseteq A$
+	\end{itemize}
+	
+	\section*{关系的运算}
+	\textbf{基本运算}:
+	\begin{itemize}
+		\item[·] $R \cup S = \{ \langle x, y \rangle \mid x R y \lor x S y \}$
+		\item[·] $R \cap S = \{ \langle x, y \rangle \mid x R y \land x S y \}$
+		\item[·] 相对补$R - S = \{ \langle x, y \rangle \mid x R y \land x \cancel{S} y \}$
+		\item[·] 绝对补$\sim R = A \times B - R$
+	\end{itemize}
+
+	\textbf{逆}：
+	\begin{itemize}
+		\item[·] $(F^{-1})^{-1} = F$
+		\item[·] $\text{dom} F^{-1} = \text{ran} F, \text{ran} F^{-1} = \text{dom} F$
+		\item[·] $M(R^{-1}) = (M(R))^T$
+	\end{itemize}
+	
+	\textbf{合成（复合）}：
+	\begin{itemize}
+		\item[·] 结合律：$(F \circ G) \circ H = F \circ (G \circ H)$
+		\item[·] $(F \circ G)^{-1} = G^{-1} \circ F^{-1}$
+		\item[·] $M(R_1 \circ R_2) = M(R_1) \cdot M(R_2)$
+	\end{itemize}
+	
+	\textbf{恒等关系性质}：$R \circ I_A = I_A \circ R = R$
+	
+	\textbf{仅并的复合有分配律}：本质$\exists$与$\land, \lor$的关系
+	\begin{itemize}
+		\item[·] $F \circ (G \cup H) = F \circ G \cup F \circ H$
+		\item[·] $(G \cup H) \circ F = G \circ F \cup H \circ F$
+		\item[·] $F \circ (G \cap H) \subseteq F \circ G \cap F \circ H$【注意是子集】
+		\item[·] $(G \cap H) \circ F \subseteq G \circ F \cap H \circ F$【注意是子集】
+	\end{itemize}
+	
+	\textbf{限制和像与交并的性质}：
+	\begin{itemize}
+		\item[·] $F \uparrow (A \cup B) = F \uparrow A \cup F \uparrow B$
+		\item[·] $F[A \cup B] = F[A] \cup F[B]$
+		\item[·] $F \uparrow (A \cap B) = F \uparrow A \cap F \uparrow B$
+		\item[·] $F[A \cap B] \subseteq F[A] \cap F[B]$
+		\item[·] $F[A] - F[B] \subseteq F[A - B]$
+	\end{itemize}
+	
+	\textbf{幂运算}：\\
+	·设 $A$ 为 $n$ 元集，$R$ 是 $A$ 上的关系，则$\exists s,t\in \mathbb{N} \text{使得}R^s = R^t$；因为A上一共只有$2^{n^2}$种关系
+	\begin{itemize}
+		\item[·] 对任何 $k \in \mathbb{N}$ 有 $R^{s+k} = R^{t+k}$
+		\item[·] 对任何 $k, i \in \mathbb{N}$ 有 $R^{s + kp + i} = R^{s + i}$，其中 $p = t - s$
+		\item[·] 令 $S = \{R^0, R^1, \ldots, R^{t-1}\}$，则对任意的 $q \in \mathbb{N}$ 有 $R^q \in S$
+	\end{itemize}
+	
+	·设 $R$ 为 $A$ 上的关系，$m, n \in \mathbb{N}$，则：
+	\begin{itemize}
+		\item[·] $R^m \circ R^n = R^{m+n}$
+		\item[·] $(R^m)^n = R^{mn}$
+	\end{itemize}
+		
+	\textbf{关系性质的充要条件}：	设 $R$ 为 $A$ 上的关系，则
+	\vspace{-10pt}
+	\begin{center}
+		\begin{tabular}{|@{\hskip 0pt}>{\centering\arraybackslash}p{14pt}@{\hskip 0pt}|@{\hskip 0pt}>{\centering\arraybackslash}p{15pt}@{\hskip 0pt}|@{\hskip 0pt}>{\centering\arraybackslash}p{20pt}@{\hskip 0pt}|@{\hskip 0pt}>{\centering\arraybackslash}p{25pt}@{\hskip 0pt}|@{\hskip 0pt}>{\centering\arraybackslash}p{26pt}@{\hskip 0pt}|@{\hskip 0pt}>{\centering\arraybackslash}p{30pt}@{\hskip 0pt}|}
+			\hline
+			 & 自反 & 反自反 & 对称性 & 反对称性 & 传递性 \\
+			\hline
+			集式 & $I_A \subseteq R$ & $R \cap I_A = \emptyset$ & $R = R^{-1}$ & $R \cap R^{-1} \subseteq I_A$ & $R \circ R \subseteq R$ \\
+			\hline
+			关系矩阵$M(R)$ & $M_{ii}=1$ & $M_{ii}=0$ & $M^T=M$ & 对 $i \neq j$，$M_{ji}+M_{ij} \leqslant 1$ &  $M^2_{ij} \leqslant M_{ij}$ \\
+			\hline
+			关系图$G(R)$ & 每个顶点都有环 & 每个顶点都没有环 & 相异点有一对方向相反的边或者没边 & 相异点仅有一条单向边或者没边 & 若$ab, bc$间都有边，则$ac$间有边 \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\vspace{-5pt}
+	·对称性与反对称性可以同时拥有（即仅有环）\\
+	·自反性与反自反性不可以同时拥有（除非定义在空集上的空关系）
+	
+	\textbf{$R_1, R_2 \subseteq A \times A$ 具有某些共同性质，经过运算后保留原性质如下表：}\\
+	\vspace{-10pt}
+	\begin{center}
+		\resizebox{130pt}{!}{ % 自动调整宽度
+			\begin{tabular}{|c|c|c|c|c|c|}
+				\hline
+				表达式                          & 自反  & 反自反 & 对称  & 反对称 & 传递  \\
+				\hline
+				$R_1^{-1}, R_2^{-1}$          & \ding{51}   & \ding{51}   & \ding{51}   & \ding{51}   & \ding{51}   \\
+				\hline
+				$R_1 \cup R_2$                & \ding{51}   & \ding{51}   & \ding{51}   &     &     \\
+				\hline
+				$R_1 \cap R_2$                & \ding{51}   & \ding{51}   & \ding{51}   & \ding{51}   & \ding{51}   \\
+				\hline
+				$R_1 \circ R_2, R_2 \circ R_1$ & \ding{51}   &     &     &     &     \\
+				\hline
+				$R_1 - R_2, R_2 - R_1$        &     & \ding{51}   & \ding{51}   & \ding{51}   &     \\
+				\hline
+				$\sim R_1, \sim R_2$          &     &     & \ding{51}   &     &     \\
+				\hline
+			\end{tabular}
+		}
+	\end{center}
+	
+	\textbf{闭包的求法}：
+	设 $R$ 为 $A$ 上的关系，则有：
+	\begin{itemize}
+		\item[·] $r(R) = R \cup I_A$
+		\item[·] $s(R) = R \cup R^{-1}$
+		\item[·] $t(R) = R \cup R^2 \cup R^3 \cup \cdots$
+	\end{itemize}
+	
+	\textbf{引理}：$(R_1 \cup R_2)^{-1} = R_1^{-1} \cup R_2^{-1}$\\	
+	\textbf{引理}：$(R_1 \cup R_2)^{2} = R_1^{2} \cup (A \circ B) \cup (B \circ A) \cup R_2^{2}$
+	
+	关系矩阵求闭包：$M_r = M \lor E, M_s = M \lor M^T, M_t = M \lor M^2 \lor M^3 + \cdots$
+	
+	关系图求闭包：
+	\begin{itemize}
+		\item[·] 自反闭包：每一个顶点没有环就加上一个环
+		\item[·] 对称闭包：每一条边没有反向边就加上反向边
+		\item[·] 传递闭包：$A$到$B$可达，就加$A$到$B$的边
+	\end{itemize}
+	
+	\textbf{闭包的性质}：
+	设 $R$ 是非空集合 $A$ 上的关系，~则 $R$ 是自反的 $\Leftrightarrow r(R) = R$；$R$ 是对称的 $\Leftrightarrow s(R) = R$；$R$ 是传递的 $\Leftrightarrow t(R) = R$
+	
+	\textbf{闭包与包含关系}：
+	$\text{若 } R_1 \subseteq R_2 \subseteq A \times A \text{ 且 } A \neq \emptyset, \text{ 则}$
+	$r(R_1) \subseteq r(R_2)$；$s(R_1) \subseteq s(R_2)$；$t(R_1) \subseteq t(R_2)$
+	
+	证明步骤：
+	\begin{enumerate}
+		\item[·] $R_1 \subseteq R_2; R_2 \subseteq r(R_2) \Rightarrow R_1 \subseteq r(R_2)$
+		\item[·] $r(R_2)$ 自反；$r(R_1)$ 定义可得 $r(R_1) \subseteq r(R_2)$
+	\end{enumerate}
+	
+	\textbf{闭包与并}：设 $R_1, R_2 \subseteq A$，且 $A \neq \emptyset$，则：
+	\begin{itemize}
+		\item[·] $r(R_1 \cup R_2) = r(R_1) \cup r(R_2)$【自反的并自反】
+		\item[·] $s(R_1 \cup R_2) = s(R_1) \cup s(R_2)$【对称的并对称】
+		\item[·] $t(R_1 \cup R_2) \supseteq t(R_1) \cup t(R_2)$【传递并未必传递】
+	\end{itemize}
+	
+	\textbf{闭包与关系性质}：注意对称与传递！
+	\begin{itemize}
+		\item[·] 若 $R$ 是自反的，则 $s(R), t(R)$ 是自反的
+		\item[·] 若 $R$ 是对称的，则 $r(R), t(R)$ 是对称的
+		\item[·] 若 $R$ 是传递的，则 $r(R)$ 是传递的
+	\end{itemize}
+	
+	\textbf{反例}：$R\text{传递，但是} s(R) \text{ 非传递}: A=\{1,2\}, R=\{<1,2>\}$
+	
+	\textbf{引理}：$(R \cup I_A)^n = I_A \cup R \cup R^2 \cup \cdots \cup R^n \quad (n \geq 1)$
+	
+	\textbf{定理}：$sr(R) = rs(R), tr(R) = rt(R), st(R) \subseteq ts(R)$
+	
+	例：$tsr(R) = trs(R) = rts(R)$ 是等价关系
+	
+	$str(R) = srt(R) = rst(R)$ 不是，无传递性
+	
+	\textbf{等价关系性质}：$R \text{为非空集合} A \text{上的等价关系，则}$
+	\begin{itemize}
+		\item[·] $\forall x \in A$, $[x]_R \neq \emptyset$，因为$xRx$
+		\item[·] $\forall x, y \in A$，$xRy \Rightarrow [x] = [y]$
+		\item[·] $\forall x, y \in A$，$\lnot xRy \Rightarrow [x] \cap [y] = \emptyset$
+		\item[·] $\cup \{[x] \mid x \in A\} = A$
+	\end{itemize}
+	
+	\textbf{序关系性质}：设 $\preccurlyeq$ 是非空集合 $A$ 上偏序关系，$\prec$ 是 $A$ 上的拟序关系，则\\
+	·$\prec$ 是反对称的\\
+	·$\preccurlyeq-I_A$ 是 $A$ 上的拟序关系\\
+	·$\prec\cup I_A$ 是 $A$ 上的偏序关系\\
+	·若 $x \prec y, x = y, y \prec x$ 中至多有一成立\\
+	·$(x \prec y \vee x = y) \wedge (y \prec x \vee y = x) \Rightarrow x = y$
+	
+	\section*{函数相关定理}
+	
+	\textbf{定理１}：
+	设 $F:A \rightarrow B, G:B \rightarrow C$，则 $F \circ G:A \rightarrow C$ 也是函数，且 $F \circ G(x) = G(F(x))$\\
+	·证：$F \circ G$单值；$\text{dom }F \circ G = A,  \text{ran } F\circ G \subseteq C$【$\subseteq$显然，$=$利用全函数定义】；$F \circ G(x) = G(F(x))$\\
+	\textbf{推论１}：
+	设 $F, G, H$ 是函数，有 $(F \circ G) \circ H = F \circ (G \circ H)$
+	
+	\textbf{定理２}：
+	设 $f: A \rightarrow B, g: B \rightarrow C$：
+	\begin{itemize}
+		\item[·] 如果 $f,g$ 都是满射的，则 $f \circ g$ 也是满射的
+		\item[·] 如果 $f,g$ 都是单射的，则 $f \circ g$ 也是单射的
+		\item[·] 如果 $f,g$ 都是双射的，则 $f \circ g$ 也是双射的
+		\item[·] 如果 $f \circ g$ 是满射的，则 $g$ 是满射
+		\item[·] 如果 $f \circ g$ 是单射的，则 $f$ 是单射
+		\item[·] 如果 $f \circ g$ 是双射的，则 $f$ 是单射，$g$ 是满射
+	\end{itemize}
+	
+	\textbf{定理３}：
+	设 $f: A \rightarrow B$，则有 $f = f \circ I_B = I_A \circ f$
+	
+	\textbf{定理４}：
+	$f, g$ 都是单调增/都是单调减的，则 $f \circ g$ 是单调增的
+	
+	\textbf{定理５（反函数）}:
+	设 $f: A \rightarrow B$ 是双射，则 $f^{-1}: B \rightarrow A$ 也是双射；且 $f^{-1} \circ f = I_B, f \circ f^{-1} = I_A$

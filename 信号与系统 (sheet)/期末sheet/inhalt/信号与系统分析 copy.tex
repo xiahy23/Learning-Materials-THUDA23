@@ -1,0 +1,919 @@
+\setlength{\abovedisplayskip}{0em}
+\setlength{\belowdisplayskip}{0em}
+
+\section*{一、连续时间信号}
+
+\subsection*{信号分类}
+
+\textbf{确定性信号}：确定的函数形式 (对应随机信号)
+
+\textbf{连续时间信号}：任何时刻都有对应函数值 (对应离散时间信号)
+
+\textbf{数字信号}：输出离散 (对应模拟信号)
+
+低通滤波(数连$\to$模连)；信号采样(模连$\to$模离)；
+信号恢复(模离$\to$模连)；数值量化(模离$\to$数离)；零阶保持(数离$\to$数连)
+
+\textbf{周期信号}：$f(t)-f(t+nT)$ (伪随机信号)
+
+\textbf{非周期信号}：e.g.两个信号周期之比不是有理数 (混沌信号)
+
+\textbf{能量(有限)信号}： (周期、阶跃能量无穷大)
+
+$E= \int ^{\infty} _{-\infty} f(t)^2dt$ ; $E = \Sigma ^{\infty} _{n=-\infty} |x[n]|^2$
+
+\textbf{功率(有限)信号}：信号平均功率定义为信号电压/电流在1 $\Omega$ 电阻上消耗的功率
+
+$P = \lim_{T\to\infty} \frac{1}{T} \int ^{\frac{T}{2}} _{-\frac{T}{2}} f(t)^2dt$ ; $P = \lim_{N\to\infty} \frac{1}{2N + 1} \Sigma ^{N} _{-N} |x[n]|^2$
+
+\subsection*{基本信号}
+
+\textbf{指数信号} $f(t)=Ke^{at}$ ; a>0信号增长; a<0信号衰减
+
+\textbf{正弦信号} $f(t)=K\sin(\omega t + \theta)$
+
+$\sin(\omega t) = \frac{1}{2j}(e^{j \omega t} - e^{-j \omega t}); \cos(\omega t) = \frac{1}{2}(e^{j \omega t} + e^{-j \omega t})$
+
+$e^{j \omega t} = \cos(\omega t) + j\sin(\omega t);e^{-j \omega t} = \cos(\omega t) - j\sin(\omega t);$
+
+\textbf{采样信号} $Sa(t) = \frac{\sin(t)}{t}$ ； 偶函数；$t = \pm \pi, \pm 2 \pi, ...$时$Sa(t)=0$；
+$\int ^{\infty} _{-\infty} Sa(t)dt = \pi;\int ^{\infty} _{0} Sa(t)dt = \frac{\pi}{2}$；$\frac{1}{t}$ 大体衰减趋势；$Si(y)=\int^{y}_{-\infty}Sa(t)dt$
+
+\textbf{高斯函数} $f(t)=E \cdot e^{-(\frac{t}{\sigma})^2};$
+
+$\int ^{\infty} _{-\infty} e^{-t^2}dt = \sqrt{\pi};E(t)=\int ^{t} _{-\infty} e^{-t^2}dt$ 误差函数
+
+\textbf{复指数信号}(真实不存在) $f(t) = Ke^{st} = Ke^{(\sigma + j\omega)t}$
+
+\begin{tabular}{c|cccccc}
+& 直流 & 指数 & 正弦 & 余弦 & 幅值变化 & 幅值变化 \\
+\hline
+$\omega$ & 0 & 0 & $\ne0$ & $\ne0$ & $\ne0$ & $\ne0$ \\
+$\sigma$ & 0 & $\ne0$ & 0 & 0 & >0 & <0 \\
+Re{} / Im{} & Re{} & Re{} & Re{} & Im{} & 增长 & 衰减 \\
+\end{tabular}
+
+\subsection*{奇异信号}
+
+不连续函数 / 其导数不连续
+
+\textbf{单位阶跃信号} $u(t)$
+
+\textbf{单位斜变信号} $f(t) = t, t\ge 0$
+
+\textbf{符号函数} $sgn(t) = 2u(t) - 1 = u(t) - u(-t)$
+
+\textbf{单位脉冲信号} $\delta (t) = \lim_{\tau\to0}\frac{1}{\tau}[u(t+\frac{\tau}{2})-u(t-\frac{\tau}{2})]$
+
+1. $\int ^{\infty} _{-\infty} \delta (t)dt = 1; \delta (t) = 0, t \ne 0$ 狄拉克(Dirac)定义
+
+2. $\int ^{\infty} _{-\infty} \delta (t-t_0)f(t)dt = f(t_0); \delta (t)f(t) = \delta(t)f(0)$ 分配函数定义 抽样特性
+
+3. $\delta(t) = \delta(-t);\delta'(t) = -\delta'(-t)$
+
+4. $\delta(t) = \lim_{\tau\to0}Z_\tau(t);\int ^{\tau} _{-\tau}Z_\tau(t)dt = 1$
+
+5. $u(t)=\int ^t _{-\infty} \delta(\tau)d\tau; \int ^{\infty} _{0} \delta(t-\sigma)d\sigma = u(t)$
+
+6. $\delta(at) = \frac{1}{|a|}\delta(t)$
+
+7. $\delta'(t)=\lim_{\tau\to0}\frac{1}{\tau}[\delta(t+\frac{\tau}{2})-\delta(t-\frac{\tau}{2})]$ 
+
+8. $\delta'(0_-) = + \infty ; \delta'(0_+) = - \infty$
+
+9. $\int ^{\infty} _{-\infty} \delta' (t)dt = 0; \delta(t)=\int ^t _{-\infty} \delta'(\tau)d\tau$
+
+10. $\int ^{\infty} _{-\infty} \delta' (t-t_0)f(t)dt = -f'(t_0)$ 抽样特性
+
+11. $\delta '(t)f(t) = \delta'(t)f(0) - f'(0)\delta(t)$ 抽样特性
+
+12. 抽样周期序列
+    
+    1. $\delta_T(t) = \Sigma ^{\infty} _ {-\infty} \delta(t - nT)$
+    
+    2. $\delta_T(t) \xrightarrow{FT} \omega_1\Sigma ^{\infty} _ {-\infty} \delta(\omega - n\omega _1)$
+    
+    3. $f_s(t) = f(t) \cdot \delta_T(t)$
+
+\subsection*{信号分解 (正交分解、能量守恒)}
+
+\textbf{直流+交流}
+
+$f_D(t) = \frac{1}{T}\int ^{\frac{T}{2}} _{-\frac{T}{2}} f(t)dt ; P = P_D + P_A$
+
+\textbf{偶分量+奇分量}
+
+$f_e(t)=\frac{1}{2}[f(t)+f(-t)];f_o(t)=\frac{1}{2}[f(t)-f(-t)]$
+
+\textbf{实部分量+虚部分量}
+
+$f_r(t)=\frac{1}{2}[f(t)+f^*(t)];$   $jf_i(t)=\frac{1}{2}[f(t)-f^*(t)]$
+
+$|f(t)|^2 = f(t)f^*(t)=f_r^2(t)+f_i^2(t)$
+
+\textbf{脉冲分解} (i.e.抽样特性)
+
+$x[n] = \Sigma ^{\infty} _{k=- \infty} x[k]\delta[n-k]$
+
+$f(t) = \int ^{\infty} _{-\infty} f(\tau)\delta(t-\tau)d\tau$
+
+\textbf{周期信号级数分解}
+
+\textbf{复指数信号分解}
+
+\section*{二、离散时间信号}
+
+\subsection*{基本信号}
+
+\textbf{单位阶跃序列} $u[n]$ ($u[0] = 1 \ne 0.5$)
+
+\textbf{单位斜变序列} $x[n]=nu[n]$
+
+\textbf{单位脉冲序列} (单位样值序列)  $\delta[n]$
+
+1. $\delta[n] = u[n] - u[n-1]$
+
+2. $u[n]=\Sigma ^{\infty} _{m=0} \delta[n-m]$
+
+3. $u[n]=\Sigma ^{n} _{m=-\infty} \delta[m]$
+
+4. $x[n]\delta[n]=x[0]\delta[n]$
+
+5. $\delta[0]=1 \ne \infty$
+
+\textbf{指数序列} $x[n] = \alpha^n u[n]$
+
+\textbf{复指数信号} $x[n]=e^{j\Omega n} = \cos[\Omega n] + j\sin[\Omega n]$
+
+1. 低频/慢变化序列发生在 $\pi$ 的偶数倍附近
+
+2. 高频/快变化序列发生在 $\pi$ 的奇数倍附近
+
+3. 不一定是周期信号，要求 $\frac{\Omega}{2\pi}= \frac{m}{n}$ (有理数) 周期：mn；m,n互质
+
+4. 基波周期N；基波频率 $\frac{2\pi}{N}$
+
+5. 归一化频率 $\omega _0 = \frac{\Omega _0}{f_s} = \Omega _0 T_s$
+
+\section*{三、信号的基本运算}
+
+\textbf{加法、乘法运算}
+
+\textbf{微分、差分运算} (突出边缘、变化、噪声增加)
+
+$\bigtriangledown ^k x[n] = \bigtriangledown ^{k-1} x[n] - \bigtriangledown ^{k-1} x[n-1]$ (k阶后向差分运算)
+
+$\bigtriangleup x[n] = x[n+1] - x[n]$ (一阶前向差分运算)
+
+\textbf{积分、累加运算} (噪声减少、累积平均)
+
+$y(t) = \int ^{t} _{-\infty} x(\tau) d\tau; y[n] = \Sigma ^{n} _{k=- \infty} x[k]$
+
+\textbf{比例换算}
+
+连续： $y(t) =x(at);$ $|a| > 1$ 表示波形在时间轴上压缩为原来的 $\frac{1}{|a|}$
+
+离散：$y[n]=x[kn];$ $k>1$ 会丢失一些样本值；$k<1$ 需要内插零运算
+
+\textbf{反褶} (时间反转)
+
+其符号表示请复习ppt
+
+\section*{四、系统}
+
+系统基本作用：对输入信号作出响应，并产生出另外的信号。
+
+系统分类：
+
+\begin{tabular}{c|c}
+种类 & 特点 \\
+\hline
+即时/动态系统 & 即时系统用代数方程描述 (包括恒等系统)；即时系统$h(t)=c\delta(t)$；\\
+ & 动态系统用微分(差分)方程描述 \\
+\hline
+线性/非线性系统 & 同时满足叠加性和齐次性，若$x_1(t)\rightarrow y_1(t)$，$x_2(t)\rightarrow y_2(t)$则 \\
+ & $ax_1(t)+bx_2(t)\rightarrow ay_1(t)+by_2(t)$ \\
+\hline
+时变/时不变系统 & 输入信号有时移时，输出响应也产生同样时移，若$x(t)\rightarrow y(t)$则 \\
+ & $x(t-t_0)\rightarrow y(t-t_0)$；反褶与尺度操作都有时变特性 \\
+\hline
+可逆/不可逆系统 & 输入输出一一对应，$h_0(t)*h_-(t)=\delta(t) $或 $h_0[n]*h_-[n]=\delta[n]$ \\
+\hline
+因果/非因果系统 & 输出与以后的输入无关；\\
+ & 具有因果性的线性时不变系统，$h(t)=0, t<0$，即因果信号 \\
+\hline
+稳定/非稳定系统 & 输入有界则输出也有界；$\int^\infty_{-\infty}\|h(\tau)\|d\tau<\infty$ \\
+\hline
+线性增量系统 & 1.系统响应可分为零状态响应和零输入相应 \\
+ & 2.零状态响应与输入成线性 \\
+ & 3.零输入相应与零状态响应成线性 \\
+\end{tabular}
+
+\subsection*{LTI系统性质}
+
+线性、时不变、微分/积分特性、子系统交换律、子系统结合律、子系统分配律
+
+\section*{五、特解通解形式求解微分方程/差分方程}
+
+\begin{tabular}{c|cc}
+系统 & 连续时间系统 & 离散时间系统 \\
+\hline
+方程名称 & 微分方程 & 差分方程 \\
+\hline
+方程式 & $\sum_{k=0}^Na_k\frac{d^k}{dt^k}y(t)=\sum_{k=0}^Mb_k\frac{d^k}{dt^k}x(t)$ & $\sum_{k=0}^Na_ky[n-k]=\sum_{k=0}^Mb_kx[n-k]$ \\
+\hline
+齐次方程 & $\sum_{k=0}^Na_k\frac{d^k}{dt^k}y_h(t)$=0 & $\sum_{k=0}^Na_ky_h[n-k]=0$ \\
+\hline
+特征方程 & $\sum_{k=0}^Na_ka^k$=0 & $\sum_{k=0}^Na_ka^{N-k}$=0 \\
+\hline
+齐次解 & 特征根$a_i$为单根时$y_h(t)=\sum_{i=1}^Nc_ie^{a_it} $ & 特征根$a_i$为单根时 \\
+ & $a_j$是特征方程的k重根时，上式中与$a^j$对应的项 & $y_h[n]=\sum_{i=1}^Nc_ia_i^n$ \\
+ & 变为$\sum_{i=0}^{k-1}d_it^ie^{a_jt}$ & $a_j$是特征方程的k重根时，上式中与$a^j$对应的项 \\
+ &  & 变为$\sum_{i=0}^{k-1}d_in^ia_j^n$ \\
+\end{tabular}
+
+常用输入信号的\textbf{特解}形式：
+
+\begin{tabular}{c|cc}
+x(t) & $y_p(t)$ & x[n] \\
+\hline
+E(常数） & C(常数) & E(常数） \\
+$\cos(wt+\phi)$ & $c_1\cos(wt)+c_2\sin(wt)$ & $\cos(\Omega n+\phi)$ \\
+$\sin(wt+\phi)$ & $c_1\cos(wt)+c_2\sin(wt)$ & $\sin(\Omega n+\phi)$ \\
+$e^{at}$ & $ce^{at}$，$a$不是方程的特征根 & $a^n$ \\
+$e^{at}$ & $(c_0t+c_1)e^{at}$, $a$是方程的单特征根 & $a^n$ \\
+$e^{at}$ & $\sum_{i=0}^kc_it^ie^{at}$, $a$是方程的k重特征根 & $a^n$ \\
+$t^n$ & $\sum_{i=0}^nc_it^i$ & $n^k$ \\
+\end{tabular}
+
+\begin{tabular}{c|c}
+$y_p(n)$ \\
+\hline
+C(常数) \\
+$c_1\cos(\Omega n)+c_2\sin(\Omega n)$ \\
+$c_1\cos(\Omega n)+c_2\sin(\Omega n)$ \\
+$ca^n$，$a$不是方程的特征根 \\
+$(c_0n+c_1)a^{n}$, a是a是方程的单特征根 \\
+$\sum_{i=0}^kc_in^ia^{n}$, $a$是方程的k重特征根 \\
+$\sum_{i=0}^kc_in^i$ \\
+\end{tabular}
+
+\section*{六、零输入响应$y_{zi}(t)$和零状态响应$y_{zs}(t)$}
+
+\textbf{零输入响应}：只包含齐次解且系统输出在0时刻不跳变
+
+- 微分方程：利用求得的齐次解的形式，利用$y^{(n)}(0_-)=y^{(n)}(0_+)$求得待定系数值即可
+
+- 差分方程：只有齐次解部分，由于无输入，直接代入$y[-2],y[-1]$求出待定系数即可
+
+\textbf{零状态响应}: 零状态响应时有$y^{(n)}(t)|_{t=0_-}=0$
+
+- 微分方程：可以利用$y_{zs}(t)=y(t)-y_{zi}(t)$求得零状态响应
+
+- 差分方程：由$y[-2]=y[-1]=0$求出$y[0],y[1]$再代入求值或是利用$y_{zs}(t)=y(t)-y_{zi}(t)$ 求得零状态响应
+
+\section*{七、Laplace变换求解微分方程，Z变换求解差分方程}
+
+\textbf{微分方程}：将方程两边同时求Laplace变换，由已知的$y^{(n)}(0)$值可以解出$Y(s)$，然后利用反演公式将$Y(s)$转换成$y(t)$即可。注：$f(t)\leftrightarrow F(s)，\frac{df(t)}{dt}\leftrightarrow sF(s)-f(0^-)，\frac{d^2f(t)}{dt^2} \leftrightarrow s^2F(s)-sf(0^-)-f'(0^-)$
+
+\textbf{差分方程}：左右同时取 z 变换，利用 z 变换的位移特性， 便可以得到一个代数方程， 其中的 $Y(z)$ 是方程的解， 通过求解代数方程， 便可以的得到差分方程的解对应的 z 变换 ,然后求解$Y(z)$的反变换即可。注：$y[n-1]\leftrightarrow z^{-1}(Y[z]+zy[-1])，y[n-2]\leftrightarrow z^{-2}(Y[z]+zy[-1]+z^{2}y[-2])，\\ y[n+1]\leftrightarrow z(Y(z)-y[0])，y[n+2]\leftrightarrow z^2(Y(z)-y[0]-z^{-1}y[1])$
+
+\section*{八、单位脉冲响应}
+
+任意离散序列都可以用单位样值信号$\delta$ (n)的线性组合表示，即$x[n]=\Sigma_{k=-\infty}^{\infty}x[k]\delta[n-k]$ 
+
+任意连续时间信号都可以用单位冲激信号$\delta(t)$ 表示，即$f(t)=\int_{-\infty}^{\infty}f(\tau)\delta(t-\tau)d\tau$ 
+
+\textbf{定义}：以$\delta(t)$作为系统激励产生的零状态响应叫做系统的\textbf{单位脉冲响应}，简称脉冲响应，用$h(t)$表示；以$u(t)$为系统激励产生的零状态响应叫做\textbf{单位阶跃响应}，记作 $g(t)$。对离散系统，同样的对单位样值序列$\delta[n]$的零状态响应叫做\textbf{单位样值响应}，或单位脉冲响应，简称脉冲响应或样值响应。
+
+$h(t)$\textbf{的两个特性}：
+
+- 物理可实现系统都是因果的，所以有$h(t)=0(t<0)$ .
+
+- 实际的物理系统是有损耗的，所以$\lim \limits_{t\to+\infty}h(t)=0$.
+
+\textbf{求解单位脉冲响应}，相当于求解一个微分/差分方程在输入$x(t)=\delta(t)$或$x[n]=\delta[n]$ 的情况下的零状态响应。
+
+- 可以采用时域经典法，先求齐次解，再用冲激函数匹配的方式求跳变。
+
+- 在不限制方法的情况下，最快速的方法是直接将$x(t)=\delta(t)$ 代入，然后在零状态下进行Laplace变换，得到$H(s)$ 再反变换即可得到冲激响应。
+
+- 离散情况下，可以利用系统的因果性，得到$h[-1]=0$ 、$h[-2]=0$ 等初始条件，用迭代的方式解出$h[0]$ 的值。
+
+\section*{九、卷积积分和卷积和}
+
+\textbf{卷积积分}：$y(t)=x(t)\ast h(t)=\int ^\infty _{-\infty}x(\tau)h(t-\tau)d\tau=\int ^\infty _{-\infty}x(t-\tau)h(\tau)d\tau$
+
+\textbf{卷积和}：$y[n]=x[n]*h[n]=\sum^\infty_{m=-\infty}x[m]h[n-m]=\sum^\infty_{m=-\infty}x[n-m]h[m]$
+
+\textbf{用途}：求解线性时不变系统（LTI）零状态响应（以连续时间系统为例）
+
+$y(t)=H[\int^\infty_{-\infty}x(\tau)\delta(t-\tau)d\tau]=\int^\infty_{-\infty}x(\tau)H[\delta(t-\tau)]d\tau=\int^\infty_{-\infty}x(\tau)h(t-\tau)d\tau=x(t)*h(t)$
+
+\textbf{卷积性质}
+
+\begin{itemize}
+\item[·] 交换律    $x(t)*h(t)=h(t)*x(t)$            $x[n]*h[n]=h[n]*x[n]$
+
+\item[·] 分配律    $x(t)*[h_1(t)+h_2(t)]=x(t)*h_1(t)+x(t)*h_2(t)$  $x[n]*[h_1[n]+h_2[n]=x[n]*h_1[n]+x[n]*h_2[n]$
+
+\item[·] 结合律   $[x(t)*h_1(t)]*h_2(t)=x(t)*[h_1(t)*h_2(t)]$       $\{x[n]*h_1[n]\}*h_2[n]=x[n]*\{h_1[n]*h_2[n]\}$
+
+\item[·] 微分/差分
+${d\over dt}[f_1(t)*f_2(t)]=f_1(t)*{d\over dt}f_2(t)={d\over dt}f_1(t)*f_2(t) $  $\bigtriangledown\{x_1[n]*x_2[n]\}=\bigtriangledown x_1[n]*x_2[n]=x_1[n]*\bigtriangledown x_2[n] $
+
+\item[·] 积分/累加
+$\int^t_{-\infty}[f_1(\tau)*f_2(\tau)]d\tau=f_1(t)*\int^t_{-\infty}f_2(\tau)d\tau=\int^t_{-\infty}f_1(\tau)d\tau*f_2(t)$
+
+ $\sum^n_{m=-\infty}\{x_1[m]*x_2[m]\}=x_1[n]*\{\sum^n_{m=-\infty}x_2[m]\}=\{\sum^n_{m=-\infty}x_1[m]\}*x_2[n]$
+
+\item[·] 高阶导数/多重积分
+$f(t)=f_1(t)*f_2(t)$    $f^{(i)}(t)=f_1^j(t)*f_2^{(i-j)}(t)$
+$i>0 : 微分$     $i=0 : 原函数$      $i<0 : 积分$
+
+\item[·] 卷积积分时移特性
+$f_1(t)*f_2(t)=f(t)$   则
+$f_1(t)*f_2(t-t_0)=f(t-t_0)$    $f_1(t-t_1)*f_2(t-t_2)=f(t-t_1-t_2)$
+
+\item[·] 卷积和时移特性：可类比卷积积分
+
+\item[·] 函数与奇异函数卷积
+$f(t)*\delta^{(k)}(t-t_0)=f^{(k)}(t-t_0)$      $f(t)*u(t)=\int^t_{-\infty}f(\tau)d\tau$
+$f[n]*\delta[n-m]=f[n-m]$      $f[n]*u[n]=\sum^n_{m=-\infty}f[m]$
+
+\item[·] 奇偶性
+偶卷偶/奇卷奇出偶；偶卷奇出奇
+
+\item[·] 解卷积
+$x[n]=\{y[n]-\sum^{n-1}_{m=0}x[m]h[n-m]\}/h[0]$
+\end{itemize}
+
+\section*{十、傅里叶级数FT}
+
+\textbf{三角函数形式}：
+
+$f(t)=a_0+\sum\limits_{n=1}^{\infty}[a_ncos(n\omega_1t)+b_nsin(n\omega_1t)]$
+
+$a_0=\frac{1}{T_1}\int_{-\frac{T_1}{2}}^{\frac{T_1}{2}}f(t)dt$
+
+$a_n=\frac{2}{T_1}\int_{-\frac{T_1}{2}}^{\frac{T_1}{2}}f(t)cos(n\omega_1t)dt,\ b_n=\frac{2}{T_1}\int_{-\frac{T_1}{2}}^{\frac{T_1}{2}}f(t)cos(n\omega_1t)dt$
+
+$f(t)=c_0+\sum\limits_{n=1}^{\infty}[c_ncos(n\omega_1t + \varphi_n)]$
+
+$c_0=a_0;c_n=\sqrt{a^2+b^2};b_n=-c_nsin\varphi_n;a_n=c_n\cos\varphi_n;tan\varphi_n=-\dfrac{b_n}{a_n}$
+
+\textbf{指数形式}：
+
+$f(t)=\sum\limits_{n=-\infty}^{+\infty}F(n\omega_1)e^{jn\omega_1t}$
+
+$F_n=F(n\omega_1)=\frac{1}{T_1}\int_{-\frac{T_1}{2}}^{\frac{T_1}{2}}f(t)e^{-jn\omega_1t}dt=\frac{1}{2}(a_n-jb_n)$
+
+$F_n = |F_n|e^{j\varphi_n} ; F(-n\omega_1) =\frac{1}{2}(a_n+jb_n); c_n = |F_n| + |F_{-n}|$
+
+$P=\overline{f^2(t)}=\frac{1}{T}\int ^{t_0 + T} _{t_0} f^2(t)dt = a_0^2 + \frac{1}{2}\Sigma_{n=1}^{\infty}(a_n^2 + b_n^2) = c_0^2 + \frac{1}{2}\Sigma _{n=1}^{\infty}c_n^2 = \Sigma _{n=-\infty}^{\infty} |F_n|^2$
+
+$\varepsilon_N^2=\frac{1}{T_0}\int ^{T_0} _0 |f(t)-f_N(t)|^2dt = \Sigma ^{\infty} _{n=N+1} |F_n|^2$
+
+收敛条件：
+
+1. 能量有限，$\int^T_0|f(t)|^2dt<\infty$;
+
+2. 一个周期内信号绝对可积，$\int_{T_1}|x(t)|dt<\infty$；极大值、极小值、间断点有限且值有限
+
+Gibbs现象：有限级数项合成波形，在间断点存在趋于跳跃值9\%的峰起。
+
+\begin{tabular}{c|c}
+常见信号 & 傅里叶级数 \\
+\hline
+周期方波（$-\dfrac{\tau}{2}\sim\dfrac{\tau}{2},0\sim E,T_1$） & $a_n=\dfrac{2E\tau}{T_1}Sa(\dfrac{n\omega_1\tau}{2}),b_n=0$ \\
+ & 频带宽度$B\approx \frac{2\pi}{\tau}$ \\
+\hline
+周期锯齿（$-\dfrac{T_1}{2}\sim\dfrac{T_1}{2},-\dfrac{E}{2}\sim\dfrac{E}{2},T_1$） & $a_n=0,b_n=(-1)^{n+1}\dfrac{E}{n\pi}$ \\
+\hline
+周期三角（$-\dfrac{T_1}{2}\sim\dfrac{T_1}{2},0\sim\dfrac{E}{2},T_1$） & $a_n=\dfrac{4E}{(n\pi)^2}\sin^2(\dfrac{n\pi}{2}),b_n=0$ \\
+\hline
+周期半波余弦 & $a_n=\dfrac{2E}{(1-n^2)\pi}\cos(\dfrac{n\pi}{2}),b_n=0$ \\
+\hline
+周期全波余弦 & $a_n=(-1)^n\dfrac{4E}{(4n^2-1)\pi},b_n=0$ \\
+\hline
+周期脉冲 & $F_n=\dfrac{1}{T_1}=a_n,b_n=0$ \\
+\end{tabular}
+
+奇谐对称：平移半个周期后与原函数上下对称，即$f(t)=-f(t+\frac{T}{2})$。
+
+\begin{tabular}{c|c|c}
+偶对称 & $a_0=\frac{2}{T_1}\int_0^{\frac{T_1}{2}}f(t)dt$ & $F_n$实偶函数 \\
+ & $a_n=\frac{4}{T_1}\int_0^{\frac{T_1}{2}}f(t)\cos(n\omega_1t)dt,$ & $\varphi_n : 0/180^\circ$ \\
+ & $b_n=0$ & \\
+\hline
+奇对称 & $b_n=\frac{4}{T_1}\int_0^{\frac{T_1}{2}}f(t)\sin(n\omega_1t)dt,$ & $F_n$虚奇函数 \\
+ & $a_0=a_n=0$ & $\varphi_n :90^\circ/270^\circ$ \\
+\hline
+奇谐对称 & $a_0=a_{2k}=b_{2k}=0$ & \\
+ & $a_{2k+1}=\frac{4}{T_1}\int_0^{\frac{T_1}{2}}f(t)\cos((2k+1)\omega_1t)dt$ & \\
+ & $b_{2k+1}=\frac{4}{T_1}\int_0^{\frac{T_1}{2}}f(t)\sin((2k+1)\omega_1t)dt$ & \\
+\end{tabular}
+
+\section*{十一、傅里叶变换 FT}
+
+$F(\omega)=\int_{-\infty}^{\infty}f(t)e^{-j\omega t}dt$； $f(t)=\frac{1}{2\pi}\int_{-\infty}^{\infty}F(\omega)e^{j\omega t}dt$
+
+$F(\omega) = |F(\omega)|e^{j\varphi(\omega)}$； $\varphi(\omega)=arctan[\frac{X(\omega)}{R(\omega)}]$
+
+求f(t)面积 $S=\int_{-\infty}^\infty f(t)dt=F(0)$
+
+\textbf{变换存在条件}：
+
+1. 能量有限：$\int_{-\infty}^{\infty}|f(t)|^2 dt<+\infty$
+
+2. Dirichlet狄义赫利条件：无限区间内信号绝对可积$\int|x(t)|dt<\infty$、极值点个数有限、间断点有限
+
+广义傅里叶变换（绝对可积）如阶跃函数，符号函数：构造函数序列逼近  
+$f(t)=\lim_{n\rightarrow\infty} f_n(t)$，$F(\omega)=\lim_{n\rightarrow\infty} F_n(\omega)$
+
+\textbf{奇偶虚实特性}
+
+$F(\omega)=|F(\omega)|e^{j\phi(\omega)}=R(\omega)+jX(\omega)$
+
+$|F(\omega)|$为偶函数，$\phi(\omega)$为奇函数
+
+\begin{tabular}{c|cccc}
+$f(t)$ & 实偶 & 实奇 & 虚偶 & 虚奇 \\
+\hline
+$F(\omega)$ & 实偶 & 虚奇 & 虚偶 & 实奇 \\
+$R(\omega)$ & 偶函数 & 零 & 零 & 奇函数 \\
+$X(\omega)$ & 零 & 奇函数 & 偶函数 & 零 \\
+\end{tabular}
+
+实函数$f(t)$，偶分量对应$R(\omega)$，奇分量对应$jX(\omega)$
+
+$\mathcal{F}(f(-t))=F(-\omega);\mathcal{F}(f^*(t))=F^*(-\omega);\mathcal{F}(f^*(-t))=F^*(\omega) $
+
+\textbf{频谱衰减规律(越来越快)}
+
+\begin{tabular}{c|c}
+$f(t)$ & 频谱衰减 \\
+\hline
+不连续 & $1/\omega$ \\
+一阶导不连续 & $1/\omega^2$ \\
+二阶导不连续 & $1/\omega^3$ \\
+\end{tabular}
+
+\begin{tabular}{c|c}
+常见信号 & $F(\omega)$ \\
+\hline
+$\delta(t)$ & $1$ \\
+$u(t)$ & $\dfrac{1}{j\omega}+\pi\delta(\omega)$ \\
+$sgn(t)$ & $\dfrac{2}{j\omega}$ \\
+$1$ & $2\pi\delta(\omega)$ \\
+$t\cdot u(t)$ & $j\pi\delta(\omega)-\dfrac{1}{\omega^2}$ \\
+$e^{-at} u(t)$ & $\dfrac{1}{a+j\omega}$ \\
+$e^{-a\|t\|}$ & $\dfrac{2a}{a^2 + \omega^2}$ \\
+$e^{-at}u(t)-e^{-at}u(-t)$ & $\|\dfrac{-2j\omega}{a^2 + \omega^2}\|$ \\
+矩形脉冲 $u(t+\frac{\tau}{2})-u(t-\frac{\tau}{2})$ & $\tau Sa(\dfrac{\omega\tau}{2})$ \\
+抽样信号 $Sa(Wt)$ & $\dfrac{\pi}{W}[u(\omega+W)-u(\omega-W)]$ \\
+三角脉冲 $1-\frac{2\|t\|}{\tau}$ & $\dfrac{\tau}{2} Sa^2(\dfrac{\omega\tau}{4})$ \\
+\end{tabular}
+
+\begin{tabular}{c|c}
+常见信号 & $F(\omega)$ \\
+\hline
+升余弦 $\frac{1}{2}(1+\cos\frac{\omega t}{2}), [-\frac{\tau}{2},\frac{\tau}{2}]$ & $\dfrac{E\tau}{2}\cdot\dfrac{Sa(\omega\tau/2)}{1-(\omega\tau/2\pi)^2}$ \\
+高斯信号 $E\cdot e^{-(t/\tau)^2}$ & $\sqrt{\pi}E\tau\cdot e^{-(\omega\tau/2)^2}$ \\
+$e^{j\omega _1 t}$ & $2\pi \delta(\omega-\omega_1)$ \\
+$e^{-j\omega _1 t}$ & $2\pi \delta(\omega+\omega_1)$ \\
+$\sin(\omega_0 t)$ & $j\pi[\delta(\omega+\omega_0)-\delta(\omega-\omega_0)]$ \\
+$\cos(\omega_0 t)$ & $\pi[\delta(\omega+\omega_0)+\delta(\omega-\omega_0)]$ \\
+$\sin(\omega_0 t)u(t)$ & $\frac{j \pi}{2}\left[\delta\left(\omega+\omega_0\right)-\delta\left(\omega-\omega_0\right)\right]-\frac{\omega_0}{\omega^2-\omega_0^2}$ \\
+$\cos(\omega_0 t)u(t)$ & $\frac{\pi}{2}\left[\delta\left(\omega+\omega_0\right)-\delta\left(\omega-\omega_0\right)\right]-j \frac{\omega}{\omega^2-\omega_0^2}$ \\
+周期信号$\sum_{n=-\infty}^{\infty} x_1\left(t-n T_0\right)$ & $\omega_0 \sum_{n=-\infty}^{\infty} X_1\left(j n \omega_0\right) \delta\left(\omega-n \omega_0\right)$ \\
+$\delta_T(t)=\sum_{n=-\infty}^{\infty} \delta\left(t-n T_0\right)$ & $\omega_0 \sum_{n=-\infty}^{\infty} \delta\left(\omega-n \omega_0\right)$ \\
+抽样函数信号$\sum_{n=-\infty}^{\infty} x(t) \delta\left(t-n T_0\right)$ & $\frac{1}{T_s} \sum_{n=-\infty}^{\infty} X\left[j\left(\omega-n \omega_s\right)\right]$ \\
+\end{tabular}
+
+\section*{十二、傅里叶变换性质}
+
+信号等效脉冲宽度与频带宽度：
+
+1. $f(0)\cdot\tau=F(0)$
+
+2. $F(0)\cdot B = 2\pi f(0)$
+
+信号测不准原理：$\Delta t\Delta\omega \ge \frac{1}{2}$
+
+$f(t) \leftrightarrow \frac{1}{j\omega} \mathcal{F}(\frac{\mathrm{d}f(t)}{\mathrm{dt}})+\pi[f(\infty) + f(-\infty)]\delta(\omega)$若$f(-\infty)\ne0$
+
+\begin{tabular}{c|c}
+线性 & $\sum_{i=0}^na_if_i(t)\leftrightarrow \sum_{i=0}^na_iF_i(\omega)$ \\
+\hline
+共轭对称 & $f^*(t) \leftrightarrow F^*(-\omega)$ \\
+\hline
+比例变换特性 & $f(at) \leftrightarrow \frac 1{\|a\|}F(\frac \omega a)$ \\
+\hline
+时移特性 & $f(t-t_0) \leftrightarrow F(\omega)e^{-j\omega t_0}$ \\
+\hline
+尺度加位移性质 & $f(at-t_0) \rightarrow\ \frac 1{\|a\|}F(\frac \omega a)e^{-j\frac {\omega t_0}a}$ \\
+\hline
+频移特性 & $f(t)e^{j\omega t_0} \leftrightarrow F(\omega-\omega_0)$ \\
+\hline
+Euler公式 & $f(t)cos(\omega_0t) \leftrightarrow \dfrac 12[F(\omega+\omega_0)+F(\omega-\omega_0)]$ \\
+ & $f(t)sin(\omega_0t) \leftrightarrow \dfrac j2[F(\omega+\omega_0)-F(\omega-\omega_0)]$ \\
+\hline
+微分特性 & $\dfrac {d^n}{dt^n}f(t) \leftrightarrow (j\omega)^nF(\omega)$ \\
+ & $(-jt)^nf(t) \leftrightarrow \dfrac {d^n}{d\omega^n}F(\omega)$ \\
+\hline
+积分特性 & $\int_{-\infty}^tf(\tau)d\tau \rightarrow \dfrac {F(\omega)}{j\omega}+\pi F(0)\delta(\omega)$ \\
+ & 若积分前函数$f(\tau)$面积为零，则$F(0) = 0$ \\
+ & $-\dfrac {f(t)}{jt}+\pi f(0)\delta(t) \rightarrow \int_{-\infty}^{\omega}F(\Omega)d\Omega$ \\
+\hline
+卷积定理 & $f_1(t)*f_2(t) \rightarrow F_1(\omega)F_2(\omega)$ \\
+ & $f_1(t)f_2(t) \rightarrow \dfrac 1{2\pi}F_1(\omega)*F_2(\omega)$ \\
+\hline
+对偶性 & $F(t) \leftrightarrow 2\pi f(-\omega)$ \\
+\hline
+帕斯瓦尔定理 & $\int ^{\infty} _{-\infty} \|x(t)\|^2 dt = \dfrac{1}{2\pi}\int ^{\infty} _{-\infty} \|X(\omega)\|^2 d\omega$ \\
+\end{tabular}
+
+\section*{十三、周期信号傅里叶变换}
+
+一般周期信号FT：
+
+$f(t)=\sum_{n=-\infty}^{\infty}F_ne^{jn\omega_1 t};\ \mathcal{F}[f(t)]=2\pi\sum_{n=-\infty}^{\infty}F_n\delta(\omega-n\omega_1)$
+
+$F_n=\frac 1{T_1}\int_{-\frac {T_1}2}^{\frac {T_1}2}f(t)e^{-jn\omega_1 t}dt=\frac 1{T_1}F_0(\omega)|_{\omega=n\omega_1};\ \  F_0(\omega)=\frac 1{T_1}\int_{-\frac {T_1}2}^{\frac {T_1}2}f_0(t)e^{-j\omega t}dt$
+
+时域周期延拓：$f_0(t) \leftrightarrow f_P(t)=\sum_{n=-\infty}^{\infty} f_0\left(t-n T_0\right)=f_0(t)*\sum_{n=-\infty}^{\infty} \delta\left(t-n T_0\right)$
+
+频域离散化：
+
+$F(\omega) \leftrightarrow F_P(\omega) = \omega_1\sum_{n=-\infty}^{\infty}F(n\omega_1)\delta(\omega-n\omega_1)$
+
+\section*{十四、调制和解调}
+
+\textbf{抑制载波振幅调制（AM-SC）与解调}
+
+设载波信号为$cos(\omega_0 t)$，它的傅里叶变换是$\pi [\delta(\omega + \omega_0) + \delta(\omega - \omega_0)]$，调制信号$g(t)$也叫基带信号，若$g(t)$的频谱为$G(\omega)$，占据$-\omega_m$至$\omega_m$的有限频带，将$g(t)$与$cos(\omega_0 t)$时域相乘即可得到调制信号$f(t)$，其频谱为$F(\omega)=1/2 [G(\omega + \omega_0) + G(\omega - \omega_0)]$，信号的频谱被搬移到载频$\omega_0$附近。
+
+由已调信号$f(t)$恢复出基带信号$g(t)$的过程称为解调，$f(t)$与$cos(\omega_0 t)$相乘使频谱左右搬移$\omega_0$（并$\times 系数1/2$），再用一个带宽大于$\omega_m$，小于$2\omega_0 - \omega_m$的低通滤波器滤除高频分量（结果为$1/2G(\omega)$）即可完成解调。这种解调器称为乘积解调或同步解调。
+
+非同步解调：$w(t)=f(t)\cos(\omega_c t+\phi)\cos(\omega_c t+\theta)=\frac{1}{2}f(t)\cos(\phi-\theta)+\frac{1}{2}f(t)\cos(2\omega_c t+\phi+\theta)$,采用理想低通滤波器(幅度为1)得到的输出为$y_1(t)=\frac{1}{2}\cos(\phi-\theta) f(t)$
+
+\textbf{振幅调制（调幅）（AM）与解调}
+
+在发射信号中加入一定强度的载波信号$Acos(\omega_0 t)$，这时发送端的合成信号为$[A+g(t)]cos(\omega_0 t)$，若$A$足够大，$\forall t$有$A+g(t)>0$，于是已调信号的包络就是$A+g(t)$，这时利用简单包络检波器即可提取包络恢复$g(t)$，不需要本地载波。
+
+\textbf{单边带调制（SSB）}
+
+设信号为$x(t)=A_m cos(\omega_m t)$，载波为$f(t)=cos(\omega_c t)$，则双边带信号为$S_{AM}=x(t)\times f(t)=\frac{1}{2} A_m[cos(\omega_m + \omega_c)t + cos(\omega_m - \omega_c)t]$，而单边带信号为$S_{SSB}=A_mcos(\omega_m \pm \omega_c)t=\frac{1}{2} A_mcos\omega_m t \times cos\omega_c t \mp \frac{1}{2} A_m sin \omega_m t \times sin\omega_c t$其中靠近原点的叫下边带，远离原点的一半叫上边带，$SSB$可以节约能量，解调方法与$AM-SC$相同。
+
+\textbf{脉冲波形传输—4800比特机问题解决方法}
+
+1. 全占空脉冲传输    2. 四电平传输    3. 时域信号设计    4. 单边带调制
+
+\section*{十五、采样和采样恢复}
+
+\textbf{1.时域理想采样}
+
+时域上：$f_s(t)=f(t)\times\delta_T(t)=f(t)\sum\limits^{\infty}_{-\infty}\delta(t-nT_s)$
+
+频域上：$F[f_s(t)]=1/T_s\sum\limits^{\infty}_{-\infty}[F(\omega-n\omega_s)]$
+
+\textbf{2.频域理想采样}
+
+频域上：$F_1(\omega)=F(\omega)\times\delta_T(t)=F(\omega)\sum\limits^{\infty}_{-\infty}\delta(\omega-n\omega_1)$
+
+时域上：$f_1(t)=\frac{1}{\omega_1}\sum\limits^{\infty}_{-\infty}f(t-nT_1)$
+
+\textbf{3.使用其它周期信号进行采样}
+
+时域上：$f_s(t)=f(t)\times p(t)$，定义$p(t)$的傅里叶级数系数$P_n$:
+
+$P_n=1/T_s[\int p(t)e^{-jn\omega_st}dt]$(积分上下限为$-T_s/2$至$T_s/2$)
+
+频域上： $F[f_s(t)]=\sum\limits_{n=-\infty}^{\infty}P_nF(\omega-n\omega_s)$
+
+\textbf{4.采样定理}
+
+$f_s\geq2f_m$，即$\omega_s\geq 2\omega_m$
+
+\textbf{5.频谱混叠}
+
+当不满足采样定理时会发生频谱混叠，即欠采样现象。此时原来信号的高频分量会形成虚假的低频分量。可以采用抗混叠滤波器，滤除信号中频率高于采样频率一半的成分，以此来避免频谱混叠。
+
+\textbf{6.欠采样的应用}
+
+- 欠采样示波器：当示波器的上升沿大于信号的上升沿时，对观察到的周期波形进行欠采样，然后再通过适当的低通滤波器，可以真实的显示被观察信号的波形。
+
+- 频闪灯：通过圆盘上的径向线条的旋转方向可以判断圆盘匀速转动的周期和闪光灯周期的大小。
+
+\textbf{7.信号的重建}
+
+1. 零阶保持：\textbf{采样序列}与$[u(t)-u(t-T_s)]$卷积；相位谱上会出现$-\omega T_s/2$的相移，对应着恢复信号相对于原信号$T_s/2$的时移。
+
+2. 一阶保持：采样序列与宽度为$T_s$，高度为1的三角波信号卷积
+
+3. 能够无损恢复出信号的滤波器的频率特性：$H(\omega)=T_s(|\omega|\leq\omega_s/2);0(else)$
+
+4. 补偿滤波器：在零阶保持或一阶保持后串联的滤波器，使得系统能够无损恢复出信号。其频率特性为：$H_r(\omega)=H(\omega)/H_0(\omega)$。$H_0(\omega)$为与采样序列卷积的信号的频谱。注意理想低通滤波器和补偿滤波器在工程上无法完美实现。
+
+\section*{十六、Z变换及其性质}
+
+\textbf{Z变换与Z反变换}
+
+$X(z)= \sum\limits_{n=-\infty}^{\infty}x[n]z^{-n}$
+
+$x[n]= \frac{1}{2\pi j}\oint X(z)z^{n-1}dz$
+
+\textbf{Z变换的收敛域}
+
+- 左边序列：模值最小极点决定的圆域。若序列右端点>0,则包含z=0点
+
+- 右边序列：模值最大极点决定的空心域。若为因果序列，则包含$\infty$点
+
+- 双边序列：圆环域（左边序列和右边序列收敛域的交）
+
+\textbf{常用Z变换对}
+
+\begin{tabular}{c|c}
+x[n] & X(z) \\
+\hline
+$\delta\left[n-m\right]\ \left(m>0\right)$ & $z^{-m} $ \\
+$ u[n]$ & $\frac{1}{1-z^{-1}}$ \\
+$ n $ & $\frac{z}{(z-1)^{2}}$ \\
+$ n^{2} $ & $\frac{z(z+1)}{(z-1)^{3}}$ \\
+$ a^{n}(n=0,1,2...) $ & $\frac{1}{1-az^{-1}}$ \\
+$ na^{n} $ & $\frac{az}{(z-a)^{2}}$ \\
+$ n^{2}a^{n} $ & $\frac{az(z+a)}{(z-a)^{3}}$ \\
+$(n+1)a^{n} $ & $\frac{z^2}{(z-a)^{2}}$ \\
+$\frac{(n+1)...(n+m)}{m!}a^{n} $ & $\frac{z^{m+1}}{(z-a)^{m+1}}$ \\
+$e^{an} $ & $\frac{z}{z-e^{a}}$ \\
+$ \cos(\omega_{0}n)$ & $ \frac{1-z^{-1}\cos\omega_{0}}{1-2z^{-1}\cos\omega_{0}+z^{-2}}$ \\
+$ \sin(\omega_{0}n) $ & $\frac{z^{-1}\sin\omega_{0}}{1-2z^{-1}\cos\omega_{0}+z^{-2}}$ \\
+\end{tabular}
+
+\begin{tabular}{c|c}
+x[n] & X(z) \\
+\hline
+$ \beta^{n}\cos(\omega_{0}n)$ & $\frac{1-z^{-1}\beta\cos\omega_{0}}{1-2\beta z^{-1}\cos\omega_{0}+\beta^{2}z^{-2}}$ \\
+$ \beta^{n}\sin(\omega_{0}n) $ & $\frac{\beta z^{-1}\sin\omega_{0}}{1-2\beta z^{-1}\cos\omega_{0}+\beta^{2}z^{-2}}$ \\
+$\sin(n\omega_{0}+\theta)$ & $\frac{\cos\theta-z^{-1}\cos(\omega_0 -\theta)}{1-2z^{-1}\cos\omega_{0}+z^{-2}}$ \\
+$\cos(n\omega_{0}+\theta)$ & $\frac{\sin\theta-z^{-1}\sin(\omega_0 -\theta)}{1-2z^{-1}\cos\omega_{0}+z^{-2}}$ \\
+$ na^n\sin(n\omega_{0}) $ & $\frac{z(z-a)(z+a)a\sin\omega_{0}}{(z^2-2az\cos\omega_0+a^2)^2}$ \\
+$ na^n\cos(n\omega_{0}) $ & $\frac{az[z^2\cos\omega_0-2az+a^2\cos\omega_0]}{(z^2-2az\cos\omega_0+a^2)^2}$ \\
+\end{tabular}
+
+\section*{十七、Z变换的性质}
+
+\begin{tabular}{c|c}
+线性 & $\sum\limits_{i=1}^{n}a_i x_i[n] \leftrightarrow \sum\limits_{i=1}^{n}a_i X_i(z)$ \\
+\hline
+时移性质 & $x[n-n_0] \leftrightarrow z^{-n_0}X(z)$ \\
+\hline
+时域尺度变换 & $a^n x[n] \leftrightarrow X(\frac{z}{a})$ \\
+\hline
+时域反转 & $x[-n] \leftrightarrow X(\frac{1}{z})$ \\
+\hline
+时域调制 & $x[n](-1)^n \leftrightarrow X(-z)$ \\
+\hline
+时域非因果序列变因果序列 & $x[n-m] \leftrightarrow z^{-m}X(z)$ \\
+\hline
+复共轭序列 & $x^*[n] \leftrightarrow X^*(z^*)$ \\
+\hline
+时域微分 & $n x[n] \leftrightarrow -z \frac{d}{dz}X(z)$ \\
+\hline
+z域微分 & $n x[n] \leftrightarrow -z \frac{d}{dz}X(z)$ \\
+ & $n^2 x[n] \leftrightarrow z \frac{d}{dz}(z \frac{d}{dz}X(z))$ \\
+\hline
+卷积 & $x_1[n] * x_2[n] \leftrightarrow X_1(z) \cdot X_2(z)$ \\
+\hline
+相关 & $r_{12}[l] = \sum\limits_{n=-\infty}^{\infty}x_1[n]x_2[n-l] \leftrightarrow X_1(z)X_2(z^{-1})$ \\
+\hline
+初值定理 & $x[0] = \lim\limits_{z \to \infty}X(z)$ \\
+\hline
+终值定理 & $\lim\limits_{n \to \infty}x[n] = \lim\limits_{z \to 1}(z-1)X(z)$ \\
+\hline
+Parseval定理 & $\sum\limits_{n=-\infty}^{\infty}|x[n]|^2 = \frac{1}{2\pi j}\oint X(z)X^*(1/z^*)\frac{dz}{z}$ \\
+\end{tabular}
+
+\section*{十八、系统函数及其性质}
+
+\textbf{系统函数定义}：$H(z) = \frac{Y(z)}{X(z)} = \sum_{n=0}^{\infty}h[n]z^{-n}$，是系统单位样值响应的Z变换
+
+\textbf{差分方程$\sum_{k=0}^{N} a_k y[n-k] = \sum_{m=0}^{M} b_m x[n-m]$的系统函数}：$H(z) = \frac{\sum_{m=0}^{M}b_m z^{-m}}{\sum_{k=0}^{N}a_k z^{-k}}$
+
+\textbf{系统极点、零点与系统特性}
+
+1. 系统函数表示形式：$H(z) = \frac{b_0 \prod_{i=1}^{M}(1-c_i z^{-1})}{\prod_{j=1}^{N}(1-d_j z^{-1})} = \frac{b_0 \prod_{i=1}^{M}(z-c_i)}{z^M\prod_{j=1}^{N}(z-d_j)}$
+
+2. 系统单位冲激响应：$h[n] = \mathcal{Z}^{-1}[H(z)]$
+
+3. 因果系统：所有极点在收敛圆外时
+
+4. 稳定系统：所有极点的模值小于1时
+
+5. 无耗散系统：所有极点在单位圆上时
+
+\textbf{系统频率特性}：$H(e^{j\Omega})=|H(e^{j\Omega})|e^{j\phi(\Omega)}$
+
+1. 系统幅频特性：$|H(e^{j\Omega})|$
+
+2. 系统相频特性：$\phi(\Omega)$
+
+3. 全通系统：$|H(e^{j\Omega})| = 1$
+
+4. 最小相位系统：系统函数极点与零点均在单位圆内
+
+5. 线性相位系统：$\phi(\Omega) = \alpha\Omega$
+
+\textbf{系统零状态响应}：$y[n] = \mathcal{Z}^{-1}[Y(z)] = \mathcal{Z}^{-1}[H(z)X(z)]$
+
+\textbf{系统基本频率分类}
+
+1. 低通系统：通过低频，抑制高频
+
+2. 高通系统：通过高频，抑制低频
+
+3. 带通系统：通过特定频段，抑制其他频段
+
+4. 带阻系统：抑制特定频段，通过其他频段
+
+5. 全通系统：通过所有频率的幅度不变
+
+\section*{十九、离散傅里叶变换DFT}
+
+\textbf{离散傅里叶变换}：有限长序列$x[n], 0 \leq n \leq N-1$，频域离散采样$X[k] = \sum_{n=0}^{N-1}x[n]e^{-j\frac{2\pi}{N}kn}, 0 \leq k \leq N-1$
+
+\textbf{离散傅里叶反变换}：$x[n] = \frac{1}{N}\sum_{k=0}^{N-1}X[k]e^{j\frac{2\pi}{N}kn}, 0 \leq n \leq N-1$
+
+\textbf{旋转因子}：$W_N = e^{-j\frac{2\pi}{N}}$，有以下性质
+
+1. $W_N^0 = 1$
+
+2. $W_N^{k+N} = W_N^k$
+
+3. $W_N^{-k} = W_N^{N-k} = (W_N^k)^*$
+
+4. $W_{rN}^{rk} = W_N^k$
+
+\textbf{DFT的矩阵表示}：
+$\begin{bmatrix} X[0] \\ X[1] \\ \vdots \\ X[N-1] \end{bmatrix} = 
+\begin{bmatrix} 
+W_N^{0\cdot0} & W_N^{0\cdot1} & \cdots & W_N^{0\cdot(N-1)} \\
+W_N^{1\cdot0} & W_N^{1\cdot1} & \cdots & W_N^{1\cdot(N-1)} \\
+\vdots & \vdots & \ddots & \vdots \\
+W_N^{(N-1)\cdot0} & W_N^{(N-1)\cdot1} & \cdots & W_N^{(N-1)\cdot(N-1)}
+\end{bmatrix}
+\begin{bmatrix} x[0] \\ x[1] \\ \vdots \\ x[N-1] \end{bmatrix}$
+
+\textbf{DFT的性质}
+
+1. 线性特性：$\mathcal{DFT}[ax_1[n]+bx_2[n]] = a\mathcal{DFT}[x_1[n]]+b\mathcal{DFT}[x_2[n]]$
+
+2. 时移特性：$\mathcal{DFT}[x[(n-n_0)_N]] = X[k]e^{-j\frac{2\pi}{N}kn_0}$
+
+3. 频移特性：$\mathcal{DFT}[x[n]e^{j\frac{2\pi}{N}k_0n}] = X[(k-k_0)_N]$
+
+4. 周期卷积：$\mathcal{DFT}[x_1[n] \circledast x_2[n]] = X_1[k] \cdot X_2[k]$
+
+5. 帕塞瓦尔定理：$\sum_{n=0}^{N-1}|x[n]|^2 = \frac{1}{N}\sum_{k=0}^{N-1}|X[k]|^2$
+
+6. 共轭对称性：$X[N-k] = X^*[k]$，当$x[n]$为实序列时
+
+\textbf{离散时间序列卷积}
+
+1. 线性卷积：$y[n] = x_1[n] * x_2[n] = \sum_{m=-\infty}^{\infty}x_1[m]x_2[n-m]$
+
+2. 周期卷积：$y_N[n] = x_{1N}[n] \circledast x_{2N}[n] = \sum_{m=0}^{N-1}x_{1N}[m]x_{2N}[(n-m)_N]$
+
+3. 使用DFT计算线性卷积：需要补零到$N \geq N_1 + N_2 - 1$，$N_1$和$N_2$分别是$x_1[n]$和$x_2[n]$的长度
+
+\section*{二十、快速傅里叶变换FFT}
+
+\textbf{基-2抽取时间FFT算法}：将N点DFT分解为两个N/2点DFT（偶序列和奇序列）
+
+1. 计算流程：$X[k] = \sum_{n=0}^{N-1}x[n]W_N^{nk} = \sum_{m=0}^{N/2-1}x[2m]W_N^{2mk} + \sum_{m=0}^{N/2-1}x[2m+1]W_N^{(2m+1)k}$
+
+2. 蝶形运算：$X[k] = G[k] + W_N^k H[k]$，$X[k+N/2] = G[k] - W_N^k H[k]$
+
+3. 计算复杂度：$O(N \log_2 N)$，相比直接计算DFT的$O(N^2)$大幅降低
+
+\textbf{基-2抽取频率FFT算法}：将输入序列分为前半部分和后半部分
+
+\textbf{按位倒序}：FFT算法中需要对输入序列进行重排序，顺序是将序号写成二进制后倒序排列
+
+\section*{二十一、线性相位滤波器设计}
+
+\textbf{理想滤波器}：通带增益为1，阻带增益为0
+
+1. 理想低通滤波器：$H_d(e^{j\omega}) = \begin{cases} 1, & |\omega| \leq \omega_c \\ 0, & \omega_c < |\omega| \leq \pi \end{cases}$
+
+2. 理想高通滤波器：$H_d(e^{j\omega}) = \begin{cases} 0, & |\omega| \leq \omega_c \\ 1, & \omega_c < |\omega| \leq \pi \end{cases}$
+
+3. 理想带通滤波器：$H_d(e^{j\omega}) = \begin{cases} 0, & |\omega| \leq \omega_{c1} \\ 1, & \omega_{c1} < |\omega| \leq \omega_{c2} \\ 0, & \omega_{c2} < |\omega| \leq \pi \end{cases}$
+
+4. 理想带阻滤波器：$H_d(e^{j\omega}) = \begin{cases} 1, & |\omega| \leq \omega_{c1} \\ 0, & \omega_{c1} < |\omega| \leq \omega_{c2} \\ 1, & \omega_{c2} < |\omega| \leq \pi \end{cases}$
+
+\textbf{线性相位FIR滤波器类型}：
+
+1. I型：N为奇数，h[n]为偶对称，零点对称分布在单位圆上
+
+2. II型：N为偶数，h[n]为偶对称，零点对称分布在单位圆上
+
+3. III型：N为奇数，h[n]为奇对称，零点对称分布在单位圆上
+
+4. IV型：N为偶数，h[n]为奇对称，零点对称分布在单位圆上
+
+\textbf{FIR滤波器设计方法}：
+
+1. \textbf{窗函数法}：$h[n] = h_d[n] \cdot w[n]$，其中$h_d[n]$是理想滤波器的单位脉冲响应，$w[n]$是窗函数
+
+\begin{tabular}{c|c|c}
+	窗函数 & 时域表达式 & 主瓣宽度 \\
+	\hline
+	矩形窗 & $w[n] = \begin{cases} 
+		1, & 0 \leq n \leq N-1 \\ 
+		0, & \text{其他} 
+	\end{cases}$ & $4\pi/N$ \\
+	\hline
+	汉宁窗 & $w[n] = 0.5 - 0.5\cos\left(\frac{2\pi n}{N-1}\right), \quad 0 \leq n \leq N-1$ & $8\pi/N$ \\
+	\hline
+	海明窗 & $w[n] = 0.54 - 0.46\cos\left(\frac{2\pi n}{N-1}\right), \quad 0 \leq n \leq N-1$ & $8\pi/N$ \\
+	\hline
+	布莱克曼窗 & $w[n] = 0.42 - 0.5\cos\left(\frac{2\pi n}{N-1}\right) + 0.08\cos\left(\frac{4\pi n}{N-1}\right)$ & $12\pi/N$ \\
+	\hline
+	Kaiser窗 & $w[n] = \frac{I_0\left(\beta\sqrt{1-\left(\frac{2n}{N-1}-1\right)^2}\right)}{I_0(\beta)}, \quad 0 \leq n \leq N-1$ & 可调 \\
+\end{tabular}
+
+2. \textbf{频率采样法}：在均匀分布的频率点上给定理想频率响应的样值，然后通过IDFT求得脉冲响应
+
+3. \textbf{等波纹逼近法}：通过切比雪夫多项式实现在通带和阻带内等波纹的逼近
+
+\section*{二十二、IIR滤波器设计}
+
+\textbf{模拟滤波器}：
+
+1. 巴特沃斯滤波器：$|H(j\Omega)|^2 = \frac{1}{1+(\Omega/\Omega_c)^{2N}}$，相位特性较为平缓
+
+2. 切比雪夫I型滤波器：$|H(j\Omega)|^2 = \frac{1}{1+\epsilon^2T_N^2(\Omega/\Omega_c)}$，通带等波纹，阻带单调下降
+
+3. 切比雪夫II型滤波器：$|H(j\Omega)|^2 = \frac{1}{1+\epsilon^2/T_N^2(\Omega_c/\Omega)}$，阻带等波纹，通带单调
+
+4. 椭圆滤波器：通带和阻带都有等波纹，过渡带最窄
+
+\textbf{IIR滤波器设计方法}：
+
+1. \textbf{脉冲响应不变法}：保持模拟滤波器的脉冲响应，$h[n] = T\cdot h_a(nT)$
+
+2. \textbf{双线性变换法}：使用变换$s = \frac{2}{T}\frac{1-z^{-1}}{1+z^{-1}}$，频率变换为$\Omega = \frac{2}{T}\tan(\frac{\omega}{2})$
+
+3. \textbf{频率预畸变}：$\Omega_c = \frac{2}{T}\tan(\frac{\omega_c}{2})$
+
+\section*{二十三、Laplace变换及其性质}
+
+\textbf{定义}：$F(s) = \int_{-\infty}^{\infty}f(t)e^{-st}dt$，$s = \sigma + j\omega$
+
+\textbf{单边Laplace变换}：$F(s) = \int_{0^-}^{\infty}f(t)e^{-st}dt$
+
+\textbf{逆变换}：$f(t) = \frac{1}{2\pi j}\int_{\sigma-j\infty}^{\sigma+j\infty}F(s)e^{st}ds$
+
+\textbf{常见Laplace变换对}：
+
+\begin{tabular}{c|c}
+信号 $f(t)$ & Laplace变换 $F(s)$ \\
+\hline
+$\delta(t)$ & $1$ \\
+$u(t)$ & $\frac{1}{s}$ \\
+$t^n u(t)$ & $\frac{n!}{s^{n+1}}$ \\
+$e^{-at}u(t)$ & $\frac{1}{s+a}$ \\
+$te^{-at}u(t)$ & $\frac{1}{(s+a)^2}$ \\
+$\sin(\omega t)u(t)$ & $\frac{\omega}{s^2+\omega^2}$ \\
+$\cos(\omega t)u(t)$ & $\frac{s}{s^2+\omega^2}$ \\
+$e^{-at}\sin(\omega t)u(t)$ & $\frac{\omega}{(s+a)^2+\omega^2}$ \\
+$e^{-at}\cos(\omega t)u(t)$ & $\frac{s+a}{(s+a)^2+\omega^2}$ \\
+\end{tabular}
+
+\textbf{性质}：
+
+\begin{tabular}{c|c}
+性质 & 数学表达式 \\
+\hline
+线性 & $\mathcal{L}[af_1(t)+bf_2(t)] = aF_1(s)+bF_2(s)$ \\
+\hline
+时移 & $\mathcal{L}[f(t-a)u(t-a)] = e^{-as}F(s)$ \\
+\hline
+尺度变换 & $\mathcal{L}[f(at)] = \frac{1}{a}F(\frac{s}{a})$ \\
+\hline
+时域微分 & $\mathcal{L}[\frac{df(t)}{dt}] = sF(s) - f(0^-)$ \\
+ & $\mathcal{L}[\frac{d^2f(t)}{dt^2}] = s^2F(s) - sf(0^-) - f'(0^-)$ \\
+\hline
+时域积分 & $\mathcal{L}[\int_{0^-}^{t}f(\tau)d\tau] = \frac{F(s)}{s}$ \\
+\hline
+频域微分 & $\mathcal{L}[tf(t)] = -\frac{dF(s)}{ds}$ \\
+\hline
+卷积 & $\mathcal{L}[f_1(t)*f_2(t)] = F_1(s)F_2(s)$ \\
+\hline
+初值定理 & $f(0^+) = \lim_{s\to\infty}sF(s)$ \\
+\hline
+终值定理 & $f(\infty) = \lim_{s\to 0}sF(s)$ \\
+\end{tabular}
+

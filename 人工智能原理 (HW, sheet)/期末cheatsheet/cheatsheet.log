@@ -1,0 +1,3223 @@
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.3) (preloaded format=xelatex 2025.3.24)  6 JUN 2025 20:30
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./cheatsheet.tex
+(cheatsheet.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(D:\Software\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(D:\Software\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count192
+\c@section=\count193
+\c@subsection=\count194
+\c@subsubsection=\count195
+\c@paragraph=\count196
+\c@subparagraph=\count197
+\c@figure=\count198
+\c@table=\count199
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen141
+)
+(D:\Software\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (D:\Software\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/03/10 v25.5 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count266
+\U@D=\dimen142
+\l@unhyphenated=\language79
+
+(D:\Software\MiKTeX\tex/generic/babel\xebabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count267
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(D:\Software\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(D:\Software\MiKTeX\tex/latex/babel-german\ngerman.ldf
+Language: ngerman 2024/12/10 v2.15 German support for babel (post-1996 orthogra
+phy)
+
+(D:\Software\MiKTeX\tex/latex/babel-german\ngermanb.ldf
+Language: ngermanb 2024/12/10 v2.15 German support for babel (post-1996 orthogr
+aphy)
+Package babel Info: Making " an active character on input line 122.
+)))
+(D:\Software\MiKTeX\tex/generic/babel/locale/de\babel-ngerman.tex
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 11.
+)
+(D:\Software\MiKTeX\tex/latex/ctex\ctex.sty
+(D:\Software\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+
+(D:\Software\MiKTeX\tex/latex/l3backend\l3backend-xetex.def
+File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
+\g__graphics_track_int=\count268
+\l__pdf_internal_box=\box52
+\g__pdf_backend_annotation_int=\count269
+\g__pdf_backend_link_int=\count270
+))
+Package: ctex 2022/07/14 v2.5.10 Chinese adapter in LaTeX (CTEX)
+
+(D:\Software\MiKTeX\tex/latex/ctex\ctexhook.sty
+Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
+)
+(D:\Software\MiKTeX\tex/latex/ctex\ctexpatch.sty
+Package: ctexpatch 2022/07/14 v2.5.10 Patching commands (CTEX)
+)
+(D:\Software\MiKTeX\tex/latex/base\fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+
+(D:\Software\MiKTeX\tex/latex/base\ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+\l__ctex_tmp_int=\count271
+\l__ctex_tmp_box=\box53
+\l__ctex_tmp_dim=\dimen143
+\g__ctex_section_depth_int=\count272
+\g__ctex_font_size_int=\count273
+
+(D:\Software\MiKTeX\tex/latex/ctex/config\ctexopts.cfg
+File: ctexopts.cfg 2022/07/14 v2.5.10 Option configuration file (CTEX)
+)
+(D:\Software\MiKTeX\tex/latex/ctex/engine\ctex-engine-xetex.def
+File: ctex-engine-xetex.def 2022/07/14 v2.5.10 XeLaTeX adapter (CTEX)
+
+(D:\Software\MiKTeX\tex/xelatex/xecjk\xeCJK.sty
+Package: xeCJK 2022/08/05 v3.9.1 Typesetting CJK scripts with XeLaTeX
+
+(D:\Software\MiKTeX\tex/latex/l3packages/xtemplate\xtemplate.sty
+Package: xtemplate 2024-08-16 L3 Experimental prototype document functions
+)
+\l__xeCJK_tmp_int=\count274
+\l__xeCJK_tmp_box=\box54
+\l__xeCJK_tmp_dim=\dimen144
+\l__xeCJK_tmp_skip=\skip51
+\g__xeCJK_space_factor_int=\count275
+\l__xeCJK_begin_int=\count276
+\l__xeCJK_end_int=\count277
+\c__xeCJK_CJK_class_int=\XeTeXcharclass4
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass5
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass6
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass7
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass8
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass9
+\c__xeCJK_CM_class_int=\XeTeXcharclass10
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass11
+\l__xeCJK_last_skip=\skip52
+\c__xeCJK_none_node=\count278
+\g__xeCJK_node_int=\count279
+\c__xeCJK_CJK_node_dim=\dimen145
+\c__xeCJK_CJK-space_node_dim=\dimen146
+\c__xeCJK_default_node_dim=\dimen147
+\c__xeCJK_CJK-widow_node_dim=\dimen148
+\c__xeCJK_normalspace_node_dim=\dimen149
+\c__xeCJK_default-space_node_skip=\skip53
+\l__xeCJK_ccglue_skip=\skip54
+\l__xeCJK_ecglue_skip=\skip55
+\l__xeCJK_punct_kern_skip=\skip56
+\l__xeCJK_indent_box=\box55
+\l__xeCJK_last_penalty_int=\count280
+\l__xeCJK_last_bound_dim=\dimen150
+\l__xeCJK_last_kern_dim=\dimen151
+\l__xeCJK_widow_penalty_int=\count281
+
+LaTeX template Info: Declaring template type 'xeCJK/punctuation' taking 0
+(template)           argument(s) on line 2396.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen152
+\l__xeCJK_mixed_punct_width_dim=\dimen153
+\l__xeCJK_middle_punct_width_dim=\dimen154
+\l__xeCJK_fixed_margin_width_dim=\dimen155
+\l__xeCJK_mixed_margin_width_dim=\dimen156
+\l__xeCJK_middle_margin_width_dim=\dimen157
+\l__xeCJK_bound_punct_width_dim=\dimen158
+\l__xeCJK_bound_margin_width_dim=\dimen159
+\l__xeCJK_margin_minimum_dim=\dimen160
+\l__xeCJK_kerning_total_width_dim=\dimen161
+\l__xeCJK_same_align_margin_dim=\dimen162
+\l__xeCJK_different_align_margin_dim=\dimen163
+\l__xeCJK_kerning_margin_width_dim=\dimen164
+\l__xeCJK_kerning_margin_minimum_dim=\dimen165
+\l__xeCJK_bound_dim=\dimen166
+\l__xeCJK_reverse_bound_dim=\dimen167
+\l__xeCJK_margin_dim=\dimen168
+\l__xeCJK_minimum_bound_dim=\dimen169
+\l__xeCJK_kerning_margin_dim=\dimen170
+\g__xeCJK_family_int=\count282
+\l__xeCJK_fam_int=\count283
+\g__xeCJK_fam_allocation_int=\count284
+\l__xeCJK_verb_case_int=\count285
+\l__xeCJK_verb_exspace_skip=\skip57
+
+(D:\Software\MiKTeX\tex/latex/fontspec\fontspec.sty
+(D:\Software\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+
+(D:\Software\MiKTeX\tex/latex/fontspec\fontspec-xetex.sty
+Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count286
+\l__fontspec_language_int=\count287
+\l__fontspec_strnum_int=\count288
+\l__fontspec_tmp_int=\count289
+\l__fontspec_tmpa_int=\count290
+\l__fontspec_tmpb_int=\count291
+\l__fontspec_tmpc_int=\count292
+\l__fontspec_em_int=\count293
+\l__fontspec_emdef_int=\count294
+\l__fontspec_strong_int=\count295
+\l__fontspec_strongdef_int=\count296
+\l__fontspec_tmpa_dim=\dimen171
+\l__fontspec_tmpb_dim=\dimen172
+\l__fontspec_tmpc_dim=\dimen173
+
+(D:\Software\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(D:\Software\MiKTeX\tex/latex/fontspec\fontspec.cfg)))
+(D:\Software\MiKTeX\tex/xelatex/xecjk\xeCJK.cfg
+File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
+))
+\ccwd=\dimen174
+\l__ctex_ccglue_skip=\skip58
+)
+\l__ctex_ziju_dim=\dimen175
+
+(D:\Software\MiKTeX\tex/latex/zhnumber\zhnumber.sty
+Package: zhnumber 2022/07/14 v3.0 Typesetting numbers with Chinese glyphs
+\l__zhnum_scale_int=\count297
+\l__zhnum_tmp_int=\count298
+
+(D:\Software\MiKTeX\tex/latex/zhnumber\zhnumber-utf8.cfg
+File: zhnumber-utf8.cfg 2022/07/14 v3.0 Chinese numerals with UTF8 encoding
+))
+(D:\Software\MiKTeX\tex/latex/ctex/scheme\ctex-scheme-chinese.def
+File: ctex-scheme-chinese.def 2022/07/14 v2.5.10 Chinese scheme for generic (CT
+EX)
+
+(D:\Software\MiKTeX\tex/latex/ctex/config\ctex-name-utf8.cfg
+File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
+))
+(D:\Software\MiKTeX\tex/latex/tools\indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+)
+(D:\Software\MiKTeX\tex/latex/ctex/fontset\ctex-fontset-windows.def
+File: ctex-fontset-windows.def 2022/07/14 v2.5.10 Windows fonts definition (CTE
+X)
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "KaiTi/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimHei/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "SimSun/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'SimSun(0)' created for font 'SimSun' with
+(fontspec)             options
+(fontspec)             [Script={CJK},BoldFont={SimHei},ItalicFont={KaiTi}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
+
+))
+(D:\Software\MiKTeX\tex/latex/ctex/config\ctex.cfg
+File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
+)
+(D:\Software\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(D:\Software\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(D:\Software\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(D:\Software\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(D:\Software\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+
+(D:\Software\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen176
+\Gin@req@width=\dimen177
+)
+(D:\Software\MiKTeX\tex/latex/psnfss\pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(D:\Software\MiKTeX\tex/latex/psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(D:\Software\MiKTeX\tex/latex/psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(D:\Software\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(D:\Software\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen178
+\ar@mcellbox=\box56
+\extrarowheight=\dimen179
+\NC@list=\toks20
+\extratabsurround=\skip59
+\backup@length=\skip60
+\ar@cellbox=\box57
+)
+\TX@col@width=\dimen180
+\TX@old@table=\dimen181
+\TX@old@col=\dimen182
+\TX@target=\dimen183
+\TX@delta=\dimen184
+\TX@cols=\count299
+\TX@ftn=\toks21
+)
+(D:\Software\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+6.
+
+(D:\Software\MiKTeX\tex/latex/lm\t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
+(D:\Software\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip61
+\enit@outerparindent=\dimen185
+\enit@toks=\toks22
+\enit@inbox=\box58
+\enit@count@id=\count300
+\enitdp@description=\count301
+)
+(D:\Software\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty
+(D:\Software\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(D:\Software\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
+(D:\Software\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks23
+\pgfutil@tempdima=\dimen186
+\pgfutil@tempdimb=\dimen187
+)
+(D:\Software\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box59
+)
+(D:\Software\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
+(D:\Software\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty
+(D:\Software\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty
+(D:\Software\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
+
+(D:\Software\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks26
+))
+\pgf@x=\dimen188
+\pgf@y=\dimen189
+\pgf@xa=\dimen190
+\pgf@ya=\dimen191
+\pgf@xb=\dimen192
+\pgf@yb=\dimen193
+\pgf@xc=\dimen194
+\pgf@yc=\dimen195
+\pgf@xd=\dimen196
+\pgf@yd=\dimen197
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count302
+\c@pgf@countb=\count303
+\c@pgf@countc=\count304
+\c@pgf@countd=\count305
+\t@pgf@toka=\toks27
+\t@pgf@tokb=\toks28
+\t@pgf@tokc=\toks29
+\pgf@sys@id@count=\count306
+(D:\Software\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(D:\Software\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count307
+)))
+(D:\Software\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count308
+\pgfsyssoftpath@bigbuffer@items=\count309
+)
+(D:\Software\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(D:\Software\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(D:\Software\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+
+(D:\Software\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen198
+\pgfmath@count=\count310
+\pgfmath@box=\box60
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
+)
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex)
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.te
+x) (D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex)
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.co
+de.tex) (D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex)
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count311
+))
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfint.code.tex)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen199
+\pgf@picmaxx=\dimen256
+\pgf@picminy=\dimen257
+\pgf@picmaxy=\dimen258
+\pgf@pathminx=\dimen259
+\pgf@pathmaxx=\dimen260
+\pgf@pathminy=\dimen261
+\pgf@pathmaxy=\dimen262
+\pgf@xx=\dimen263
+\pgf@xy=\dimen264
+\pgf@yx=\dimen265
+\pgf@yy=\dimen266
+\pgf@zx=\dimen267
+\pgf@zy=\dimen268
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen269
+\pgf@path@lasty=\dimen270
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen271
+\pgf@shorten@start@additional=\dimen272
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box61
+\pgf@hbox=\box62
+\pgf@layerbox@main=\box63
+\pgf@picture@serial@count=\count312
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen273
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen274
+\pgf@pt@y=\dimen275
+\pgf@pt@temp=\dimen276
+) (D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen277
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen278
+\pgf@sys@shading@range@num=\count313
+\pgf@shadingcount=\count314
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box64
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(D:\Software\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box65
+)
+(D:\Software\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen279
+\pgf@nodesepend=\dimen280
+)
+(D:\Software\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+))
+(D:\Software\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
+(D:\Software\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
+(D:\Software\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex))
+(D:\Software\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(D:\Software\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex))
+(D:\Software\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen281
+\pgffor@skip=\dimen282
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+))
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count315
+\pgfplotmarksize=\dimen283
+)
+\tikz@lastx=\dimen284
+\tikz@lasty=\dimen285
+\tikz@lastxsaved=\dimen286
+\tikz@lastysaved=\dimen287
+\tikz@lastmovetox=\dimen288
+\tikz@lastmovetoy=\dimen289
+\tikzleveldistance=\dimen290
+\tikzsiblingdistance=\dimen291
+\tikz@figbox=\box66
+\tikz@figbox@bg=\box67
+\tikz@tempbox=\box68
+\tikz@tempbox@bg=\box69
+\tikztreelevel=\count316
+\tikznumberofchildren=\count317
+\tikznumberofcurrentchild=\count318
+\tikz@fig@count=\count319
+
+(D:\Software\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count320
+\pgfmatrixcurrentcolumn=\count321
+\pgf@matrix@numberofcolumns=\count322
+)
+\tikz@expandcount=\count323
+
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytop
+aths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysha
+pes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysha
+pes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric
+.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysha
+pes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code
+.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysha
+pes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.c
+ode.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysha
+pes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.co
+de.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysha
+pes.callouts.code.tex
+(D:\Software\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.
+code.tex))
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarysha
+pes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart
+.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box70
+\pgfnodeparttwobox=\box71
+\pgfnodepartthreebox=\box72
+\pgfnodepartfourbox=\box73
+\pgfnodeparttwentybox=\box74
+\pgfnodepartnineteenbox=\box75
+\pgfnodeparteighteenbox=\box76
+\pgfnodepartseventeenbox=\box77
+\pgfnodepartsixteenbox=\box78
+\pgfnodepartfifteenbox=\box79
+\pgfnodepartfourteenbox=\box80
+\pgfnodepartthirteenbox=\box81
+\pgfnodeparttwelvebox=\box82
+\pgfnodepartelevenbox=\box83
+\pgfnodeparttenbox=\box84
+\pgfnodepartninebox=\box85
+\pgfnodeparteightbox=\box86
+\pgfnodepartsevenbox=\box87
+\pgfnodepartsixbox=\box88
+\pgfnodepartfivebox=\box89
+)))
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypos
+itioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryarr
+ows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(D:\Software\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen292
+))
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit
+.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycal
+c.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries/graphs\tikzlib
+rarygraphs.code.tex
+File: tikzlibrarygraphs.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\tikz@lib@auto@number=\count324
+\tikz@qnode@count=\count325
+)
+(D:\Software\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries/graphs\tikzlib
+rarygraphs.standard.code.tex
+File: tikzlibrarygraphs.standard.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (D:\Software\MiKTeX\tex/latex/kpfonts\kpfonts.sty
+Package: kpfonts  2024/10/27 v3.36
+(D:\Software\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(D:\Software\MiKTeX\tex/latex/kpfonts-otf\kpfonts-otf.sty
+Package: kpfonts-otf 2025-02-15 0.66
+\KpMtoks=\toks35
+
+(D:\Software\MiKTeX\tex/latex/realscripts\realscripts.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
+ts
+\subsupersep=\dimen293
+)
+(D:\Software\MiKTeX\tex/latex/kpfonts-otf\KpRoman.fontspec)
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpRoman(0)' created for font 'KpRoman'
+(fontspec)             with options [Extension = .otf,UprightFont =
+(fontspec)             KpRoman-Regular,BoldFont = KpRoman-Bold,ItalicFont =
+(fontspec)             KpRoman-Italic,BoldItalicFont =
+(fontspec)             KpRoman-BoldItalic,SlantedFont =
+(fontspec)             KpRoman-Regular,SlantedFeatures =
+(fontspec)             {FakeSlant=0.19},BoldSlantedFont =
+(fontspec)             KpRoman-Bold,BoldSlantedFeatures =
+(fontspec)             {FakeSlant=0.19},SmallCapsFeatures =
+(fontspec)             {Letters=PetiteCaps},Ligatures={Common,RequiredOff,RareO
+ff,HistoricOff}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;+
+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;+
+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;+lig
+a;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;+lig
+a;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Italic.otf]/OT:script=latn;language=dflt;+l
+iga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Italic.otf]/OT:script=latn;language=dflt;+l
+iga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;s
+lant=0.19;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;s
+lant=0.19;+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[KpRoman-BoldItalic.otf]/OT:script=latn;language=dfl
+t;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[KpRoman-BoldItalic.otf]/OT:script=latn;language=dfl
+t;+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;slan
+t=0.19;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;slan
+t=0.19;+liga;-rlig;-dlig;-hlig;+pcap;"
+
+
+(D:\Software\MiKTeX\tex/latex/kpfonts-otf\KpLight.fontspec)
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpLight(0)' created for font 'KpLight'
+(fontspec)             with options [Extension = .otf,UprightFont =
+(fontspec)             KpRoman-Light,BoldFont = KpRoman-Semibold,ItalicFont =
+(fontspec)             KpRoman-LightItalic,BoldItalicFont =
+(fontspec)             KpRoman-SemiboldItalic,SlantedFont =
+(fontspec)             KpRoman-Light,SlantedFeatures =
+(fontspec)             {FakeSlant=0.19},BoldSlantedFont =
+(fontspec)             KpRoman-Semibold,BoldSlantedFeatures =
+(fontspec)             {FakeSlant=0.19},SmallCapsFeatures =
+(fontspec)             {Letters=PetiteCaps},Ligatures={Common,RequiredOff,RareO
+ff,HistoricOff}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Light.otf]/OT:script=latn;language=dflt;+li
+ga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Light.otf]/OT:script=latn;language=dflt;+li
+ga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Semibold.otf]/OT:script=latn;language=dflt;
++liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Semibold.otf]/OT:script=latn;language=dflt;
++liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[KpRoman-LightItalic.otf]/OT:script=latn;language=df
+lt;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[KpRoman-LightItalic.otf]/OT:script=latn;language=df
+lt;+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Light.otf]/OT:script=latn;language=dflt;sla
+nt=0.19;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Light.otf]/OT:script=latn;language=dflt;sla
+nt=0.19;+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[KpRoman-SemiboldItalic.otf]/OT:script=latn;language
+=dflt;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[KpRoman-SemiboldItalic.otf]/OT:script=latn;language
+=dflt;+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Semibold.otf]/OT:script=latn;language=dflt;
+slant=0.19;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Semibold.otf]/OT:script=latn;language=dflt;
+slant=0.19;+liga;-rlig;-dlig;-hlig;+pcap;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpRoman(1)' created for font 'KpRoman'
+(fontspec)             with options [Ligatures=TeX,Extension =
+(fontspec)             .otf,UprightFont = KpRoman-Regular,BoldFont =
+(fontspec)             KpRoman-Bold,ItalicFont = KpRoman-Italic,BoldItalicFont
+(fontspec)             = KpRoman-BoldItalic,SlantedFont =
+(fontspec)             KpRoman-Regular,SlantedFeatures =
+(fontspec)             {FakeSlant=0.19},BoldSlantedFont =
+(fontspec)             KpRoman-Bold,BoldSlantedFeatures =
+(fontspec)             {FakeSlant=0.19},SmallCapsFeatures =
+(fontspec)             {Letters=PetiteCaps},Ligatures={Common,RequiredOff,RareO
+ff,HistoricOff},SmallCapsFeatures
+(fontspec)             = {Letters=PetiteCaps}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;+
+liga;-rlig;-dlig;-hlig;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;+
+liga;-rlig;-dlig;-hlig;+pcap;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;+lig
+a;-rlig;-dlig;-hlig;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;+lig
+a;-rlig;-dlig;-hlig;+pcap;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Italic.otf]/OT:script=latn;language=dflt;+l
+iga;-rlig;-dlig;-hlig;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Italic.otf]/OT:script=latn;language=dflt;+l
+iga;-rlig;-dlig;-hlig;+pcap;mapping=tex-text;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;s
+lant=0.19;+liga;-rlig;-dlig;-hlig;mapping=tex-text;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;s
+lant=0.19;+liga;-rlig;-dlig;-hlig;+pcap;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[KpRoman-BoldItalic.otf]/OT:script=latn;language=dfl
+t;+liga;-rlig;-dlig;-hlig;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[KpRoman-BoldItalic.otf]/OT:script=latn;language=dfl
+t;+liga;-rlig;-dlig;-hlig;+pcap;mapping=tex-text;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;slan
+t=0.19;+liga;-rlig;-dlig;-hlig;mapping=tex-text;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;slan
+t=0.19;+liga;-rlig;-dlig;-hlig;+pcap;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpRoman(2)' created for font 'KpRoman'
+(fontspec)             with options [Extension = .otf,UprightFont =
+(fontspec)             KpRoman-Regular,BoldFont = KpRoman-Bold,ItalicFont =
+(fontspec)             KpRoman-Italic,BoldItalicFont =
+(fontspec)             KpRoman-BoldItalic,SlantedFont =
+(fontspec)             KpRoman-Regular,SlantedFeatures =
+(fontspec)             {FakeSlant=0.19},BoldSlantedFont =
+(fontspec)             KpRoman-Bold,BoldSlantedFeatures =
+(fontspec)             {FakeSlant=0.19},SmallCapsFeatures =
+(fontspec)             {Letters=PetiteCaps},Ligatures={Common,RequiredOff,RareO
+ff,HistoricOff},SmallCapsFeatures
+(fontspec)             = {Letters=PetiteCaps}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;+
+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;+
+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;+lig
+a;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;+lig
+a;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Italic.otf]/OT:script=latn;language=dflt;+l
+iga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Italic.otf]/OT:script=latn;language=dflt;+l
+iga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;s
+lant=0.19;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Regular.otf]/OT:script=latn;language=dflt;s
+lant=0.19;+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[KpRoman-BoldItalic.otf]/OT:script=latn;language=dfl
+t;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[KpRoman-BoldItalic.otf]/OT:script=latn;language=dfl
+t;+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;slan
+t=0.19;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Bold.otf]/OT:script=latn;language=dflt;slan
+t=0.19;+liga;-rlig;-dlig;-hlig;+pcap;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpLight(1)' created for font 'KpLight'
+(fontspec)             with options [Extension = .otf,UprightFont =
+(fontspec)             KpRoman-Light,BoldFont = KpRoman-Semibold,ItalicFont =
+(fontspec)             KpRoman-LightItalic,BoldItalicFont =
+(fontspec)             KpRoman-SemiboldItalic,SlantedFont =
+(fontspec)             KpRoman-Light,SlantedFeatures =
+(fontspec)             {FakeSlant=0.19},BoldSlantedFont =
+(fontspec)             KpRoman-Semibold,BoldSlantedFeatures =
+(fontspec)             {FakeSlant=0.19},SmallCapsFeatures =
+(fontspec)             {Letters=PetiteCaps},Ligatures={Common,RequiredOff,RareO
+ff,HistoricOff},SmallCapsFeatures
+(fontspec)             = {Letters=PetiteCaps}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Light.otf]/OT:script=latn;language=dflt;+li
+ga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Light.otf]/OT:script=latn;language=dflt;+li
+ga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Semibold.otf]/OT:script=latn;language=dflt;
++liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Semibold.otf]/OT:script=latn;language=dflt;
++liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[KpRoman-LightItalic.otf]/OT:script=latn;language=df
+lt;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[KpRoman-LightItalic.otf]/OT:script=latn;language=df
+lt;+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'slanted' (m/sl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Light.otf]/OT:script=latn;language=dflt;sla
+nt=0.19;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'slanted small caps'  (m/scsl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Light.otf]/OT:script=latn;language=dflt;sla
+nt=0.19;+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[KpRoman-SemiboldItalic.otf]/OT:script=latn;language
+=dflt;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"[KpRoman-SemiboldItalic.otf]/OT:script=latn;language
+=dflt;+liga;-rlig;-dlig;-hlig;+pcap;"
+(fontspec)             - 'bold slanted' (b/sl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Semibold.otf]/OT:script=latn;language=dflt;
+slant=0.19;+liga;-rlig;-dlig;-hlig;"
+(fontspec)             - 'bold slanted small caps'  (b/scsl) with NFSS spec.:
+(fontspec)             <->"[KpRoman-Semibold.otf]/OT:script=latn;language=dflt;
+slant=0.19;+liga;-rlig;-dlig;-hlig;+pcap;"
+
+
+(D:\Software\MiKTeX\tex/latex/kpfonts-otf\KpMono.fontspec)
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpMono(0)' created for font 'KpMono' with
+(fontspec)             options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
+Space,Extension
+(fontspec)             = .otf,UprightFont = *-Regular,BoldFont =
+(fontspec)             *-Bold,ItalicFont = *-Italic,BoldItalicFont =
+(fontspec)             *-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[KpMono-Regular.otf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[KpMono-Bold.otf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[KpMono-Italic.otf]/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[KpMono-BoldItalic.otf]/OT:script=latn;language=dflt
+;"
+
+
+(D:\Software\MiKTeX\tex/latex/unicode-math\unicode-math.sty
+Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+
+(D:\Software\MiKTeX\tex/latex/unicode-math\unicode-math-xetex.sty
+Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLa
+TeX
+
+(D:\Software\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty
+Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
+)
+(D:\Software\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip62
+
+For additional information on amsmath, use the `?' option.
+(D:\Software\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(D:\Software\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks36
+\ex@=\dimen294
+))
+(D:\Software\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen295
+)
+(D:\Software\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count326
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count327
+\leftroot@=\count328
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count329
+\DOTSCASE@=\count330
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box90
+\strutbox@=\box91
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen296
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count331
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count332
+\dotsspace@=\muskip17
+\c@parentequation=\count333
+\dspbrk@lvl=\count334
+\tag@help=\toks37
+\row@=\count335
+\column@=\count336
+\maxfields@=\count337
+\andhelp@=\toks38
+\eqnshift@=\dimen297
+\alignsep@=\dimen298
+\tagshift@=\dimen299
+\tagwidth@=\dimen300
+\totwidth@=\dimen301
+\lineht@=\dimen302
+\@envbody=\toks39
+\multlinegap=\skip63
+\multlinetaggap=\skip64
+\mathdisplay@stack=\toks40
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\g__um_fam_int=\count338
+\g__um_fonts_used_int=\count339
+\l__um_primecount_int=\count340
+\g__um_primekern_muskip=\muskip18
+
+(D:\Software\MiKTeX\tex/latex/unicode-math\unicode-math-table.tex)))
+(D:\Software\MiKTeX\tex/latex/kpfonts-otf\KpMath-Regular.fontspec)
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpMath-Regular.otf(0)' created for font
+(fontspec)             'KpMath-Regular.otf' with options [Extension =
+(fontspec)             .otf,BoldFont =
+(fontspec)             KpMath-Bold,BoldItalicFont={},ItalicFont={},SmallCapsFon
+t={},Script=Math].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[KpMath-Regular.otf]/OT:script=math;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[KpMath-Bold.otf]/OT:script=math;language=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpMath-Regular.otf(1)' created for font
+(fontspec)             'KpMath-Regular.otf' with options [Extension =
+(fontspec)             .otf,BoldFont =
+(fontspec)             KpMath-Bold,BoldItalicFont={},ItalicFont={},SmallCapsFon
+t={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6.25-8.5,Font=KpMath-Regular.o
+tf,Style=MathScript},{Size=-6.25,Font=KpMath-Regular.otf,Style=MathScriptScript
+}}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->"[KpMath-Regular.otf]/OT:script=math;language=dflt
+;"<6.25-8.5>"[KpMath-Regular.otf]/OT:script=math;language=dflt;+ssty=0;"<-6.25>
+"[KpMath-Regular.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[KpMath-Bold.otf]/OT:script=math;language=dflt;"
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 267.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/KpMath-Regular.otf(1)/m/n on input l
+ine 267.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 267.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/KpMath-Regular.otf(1)/b/n on input 
+line 267.
+
+Package fontspec Info: 
+(fontspec)             KpMath-Regular scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             KpMath-Regular scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             KpMath-Regular scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             KpMath-Regular scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             KpMath-Bold scale = 1.0001.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpMath-Regular.otf(2)' created for font
+(fontspec)             'KpMath-Regular.otf' with options [Extension =
+(fontspec)             .otf,BoldFont =
+(fontspec)             KpMath-Bold,BoldItalicFont={},ItalicFont={},SmallCapsFon
+t={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6.25-8.5,Font=KpMath-Regular.o
+tf,Style=MathScript},{Size=-6.25,Font=KpMath-Regular.otf,Style=MathScriptScript
+}},ScaleAgain=1.0001,FontAdjustment={\fontdimen
+(fontspec)             8\font =6.77pt\relax \fontdimen 9\font =3.94pt\relax
+(fontspec)             \fontdimen 10\font =4.44pt\relax \fontdimen 11\font
+(fontspec)             =6.86pt\relax \fontdimen 12\font =3.45pt\relax
+(fontspec)             \fontdimen 13\font =4.5pt\relax \fontdimen 14\font
+(fontspec)             =4.5pt\relax \fontdimen 15\font =3.2pt\relax \fontdimen
+(fontspec)             16\font =2.1pt\relax \fontdimen 17\font =2.1pt\relax
+(fontspec)             \fontdimen 18\font =2.3pt\relax \fontdimen 19\font
+(fontspec)             =1.0pt\relax \fontdimen 22\font =2.5pt\relax \fontdimen
+(fontspec)             20\font =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[1.0001]"[KpMath-Regular.otf]/OT:script=math;lan
+guage=dflt;"<6.25-8.5>s*[1.0001]"[KpMath-Regular.otf]/OT:script=math;language=d
+flt;+ssty=0;"<-6.25>s*[1.0001]"[KpMath-Regular.otf]/OT:script=math;language=dfl
+t;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.0001]"[KpMath-Bold.otf]/OT:script=math;language=
+dflt;"
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 267.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> TU/KpMath-Regular.otf(2)/m/n on input 
+line 267.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 267.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> TU/KpMath-Regular.otf(2)/b/n on input 
+line 267.
+
+Package fontspec Info: 
+(fontspec)             KpMath-Regular scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             KpMath-Regular scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             KpMath-Regular scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             KpMath-Regular scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             KpMath-Bold scale = 0.9999.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpMath-Regular.otf(3)' created for font
+(fontspec)             'KpMath-Regular.otf' with options [Extension =
+(fontspec)             .otf,BoldFont =
+(fontspec)             KpMath-Bold,BoldItalicFont={},ItalicFont={},SmallCapsFon
+t={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6.25-8.5,Font=KpMath-Regular.o
+tf,Style=MathScript},{Size=-6.25,Font=KpMath-Regular.otf,Style=MathScriptScript
+}},ScaleAgain=0.9999,FontAdjustment={\fontdimen
+(fontspec)             8\font =0.5pt\relax \fontdimen 9\font =1.11pt\relax
+(fontspec)             \fontdimen 10\font =1.67pt\relax \fontdimen 11\font
+(fontspec)             =2.0pt\relax \fontdimen 12\font =6.0pt\relax \fontdimen
+(fontspec)             13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->s*[0.9999]"[KpMath-Regular.otf]/OT:script=math;lan
+guage=dflt;"<6.25-8.5>s*[0.9999]"[KpMath-Regular.otf]/OT:script=math;language=d
+flt;+ssty=0;"<-6.25>s*[0.9999]"[KpMath-Regular.otf]/OT:script=math;language=dfl
+t;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9999]"[KpMath-Bold.otf]/OT:script=math;language=
+dflt;"
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 2
+67.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> TU/KpMath-Regular.otf(3)/m/n on input 
+line 267.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 267
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> TU/KpMath-Regular.otf(3)/b/n on input 
+line 267.
+
+Package fontspec Info: 
+(fontspec)             Font family 'KpMath-Regular.otf(4)' created for font
+(fontspec)             'KpMath-Regular.otf' with options [Extension =
+(fontspec)             .otf,BoldFont =
+(fontspec)             KpMath-Bold,BoldItalicFont={},ItalicFont={},SmallCapsFon
+t={},Script=Math,SizeFeatures={{Size=8.5-},{Size=6.25-8.5,Font=KpMath-Regular.o
+tf,Style=MathScript},{Size=-6.25,Font=KpMath-Regular.otf,Style=MathScriptScript
+}},RawFeature={+ss01}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <8.5->"[KpMath-Regular.otf]/OT:script=math;language=dflt
+;+ss01;"<6.25-8.5>"[KpMath-Regular.otf]/OT:script=math;language=dflt;+ss01;+sst
+y=0;"<-6.25>"[KpMath-Regular.otf]/OT:script=math;language=dflt;+ss01;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[KpMath-Bold.otf]/OT:script=math;language=dflt;+ss01
+;"
+
+\sym__um_fam1=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
+(Font)                  TU/KpMath-Regular.otf(4)/m/n --> TU/KpMath-Regular.otf(
+4)/m/n on input line 268.
+LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
+(Font)                  TU/KpMath-Regular.otf(4)/m/n --> TU/KpMath-Regular.otf(
+4)/b/n on input line 268.
+))
+(D:\Software\MiKTeX\tex/latex/sourcesanspro\sourcesanspro.sty
+Package: sourcesanspro 2018/05/19 v2.7 Adobe's Source Sans Pro typeface
+
+(D:\Software\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(D:\Software\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(D:\Software\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(D:\Software\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(D:\Software\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks41
+\XKV@tempa@toks=\toks42
+)
+\XKV@depth=\count341
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(D:\Software\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+
+(D:\Software\MiKTeX\tex/latex/ly1\ly1enc.def
+File: ly1enc.def 2022/06/11 v0.8 TeX 'n ANSI encoding (DPC/KB)
+)
+LaTeX Font Info:    Trying to load font information for T1+KpRoman(1) on input 
+line 116.
+LaTeX Font Info:    No file T1KpRoman(1).fd. on input line 116.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 11
+6.
+
+(D:\Software\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+)
+
+LaTeX Font Warning: Font shape `T1/KpRoman(1)/m/n' undefined
+(Font)              using `T1/ptm/m/n' instead on input line 116.
+
+)) (D:\Software\MiKTeX\tex/latex/tools\multicol.sty
+Package: multicol 2024/09/14 v1.9i multicolumn formatting (FMi)
+\c@tracingmulticols=\count342
+\mult@box=\box92
+\multicol@leftmargin=\dimen303
+\c@unbalance=\count343
+\c@collectmore=\count344
+\doublecol@number=\count345
+\multicoltolerance=\count346
+\multicolpretolerance=\count347
+\full@width=\dimen304
+\page@free=\dimen305
+\premulticols=\dimen306
+\postmulticols=\dimen307
+\multicolsep=\skip65
+\multicolbaselineskip=\skip66
+\partial@page=\box93
+\last@line=\box94
+\mc@boxedresult=\box95
+\maxbalancingoverflow=\dimen308
+\mult@rightbox=\box96
+\mult@grightbox=\box97
+\mult@firstbox=\box98
+\mult@gfirstbox=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\@tempa=\box134
+\@tempa=\box135
+\c@minrows=\count348
+\c@columnbadness=\count349
+\c@finalcolumnbadness=\count350
+\last@try=\dimen309
+\multicolovershoot=\dimen310
+\multicolundershoot=\dimen311
+\mult@nat@firstbox=\box136
+\colbreak@box=\box137
+\mc@col@check@num=\count351
+)
+(D:\Software\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen312
+\WF@size=\dimen313
+\c@WF@wrappedlines=\count352
+\WF@box=\box138
+\WF@everypar=\toks43
+Package: wrapfig 2003/01/31  v 3.6
+)
+(D:\Software\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(D:\Software\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count353
+\Gm@cntv=\count354
+\c@Gm@tempcnt=\count355
+\Gm@bindingoffset=\dimen314
+\Gm@wd@mp=\dimen315
+\Gm@odd@mp=\dimen316
+\Gm@even@mp=\dimen317
+\Gm@layoutwidth=\dimen318
+\Gm@layoutheight=\dimen319
+\Gm@layouthoffset=\dimen320
+\Gm@layoutvoffset=\dimen321
+\Gm@dimlist=\toks44
+
+(D:\Software\MiKTeX\tex/latex/geometry\geometry.cfg))
+(D:\Software\MiKTeX\tex/latex/mdframed\mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(D:\Software\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(D:\Software\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(D:\Software\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(D:\Software\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count356
+)
+(D:\Software\MiKTeX\tex/latex/zref\zref-abspage.sty
+Package: zref-abspage 2023-09-14 v2.35 Module abspage for zref (HO)
+
+(D:\Software\MiKTeX\tex/latex/zref\zref-base.sty
+Package: zref-base 2023-09-14 v2.35 Module base for zref (HO)
+
+(D:\Software\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(D:\Software\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(D:\Software\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(D:\Software\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+(D:\Software\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
+)
+\c@abspage=\count357
+Package zref Info: New property: abspage on input line 67.
+)
+(D:\Software\MiKTeX\tex/latex/needspace\needspace.sty
+Package: needspace 2025/03/13 v1.3e reserve vertical space
+)
+\mdf@templength=\skip67
+\c@mdf@globalstyle@cnt=\count358
+\mdf@skipabove@length=\skip68
+\mdf@skipbelow@length=\skip69
+\mdf@leftmargin@length=\skip70
+\mdf@rightmargin@length=\skip71
+\mdf@innerleftmargin@length=\skip72
+\mdf@innerrightmargin@length=\skip73
+\mdf@innertopmargin@length=\skip74
+\mdf@innerbottommargin@length=\skip75
+\mdf@splittopskip@length=\skip76
+\mdf@splitbottomskip@length=\skip77
+\mdf@outermargin@length=\skip78
+\mdf@innermargin@length=\skip79
+\mdf@linewidth@length=\skip80
+\mdf@innerlinewidth@length=\skip81
+\mdf@middlelinewidth@length=\skip82
+\mdf@outerlinewidth@length=\skip83
+\mdf@roundcorner@length=\skip84
+\mdf@footenotedistance@length=\skip85
+\mdf@userdefinedwidth@length=\skip86
+\mdf@needspace@length=\skip87
+\mdf@frametitleaboveskip@length=\skip88
+\mdf@frametitlebelowskip@length=\skip89
+\mdf@frametitlerulewidth@length=\skip90
+\mdf@frametitleleftmargin@length=\skip91
+\mdf@frametitlerightmargin@length=\skip92
+\mdf@shadowsize@length=\skip93
+\mdf@extratopheight@length=\skip94
+\mdf@subtitleabovelinewidth@length=\skip95
+\mdf@subtitlebelowlinewidth@length=\skip96
+\mdf@subtitleaboveskip@length=\skip97
+\mdf@subtitlebelowskip@length=\skip98
+\mdf@subtitleinneraboveskip@length=\skip99
+\mdf@subtitleinnerbelowskip@length=\skip100
+\mdf@subsubtitleabovelinewidth@length=\skip101
+\mdf@subsubtitlebelowlinewidth@length=\skip102
+\mdf@subsubtitleaboveskip@length=\skip103
+\mdf@subsubtitlebelowskip@length=\skip104
+\mdf@subsubtitleinneraboveskip@length=\skip105
+\mdf@subsubtitleinnerbelowskip@length=\skip106
+
+(D:\Software\MiKTeX\tex/latex/mdframed\md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box139
+\mdf@footnotebox=\box140
+\mdf@splitbox@one=\box141
+\mdf@splitbox@two=\box142
+\mdf@splitbox@save=\box143
+\mdfsplitboxwidth=\skip107
+\mdfsplitboxtotalwidth=\skip108
+\mdfsplitboxheight=\skip109
+\mdfsplitboxdepth=\skip110
+\mdfsplitboxtotalheight=\skip111
+\mdfframetitleboxwidth=\skip112
+\mdfframetitleboxtotalwidth=\skip113
+\mdfframetitleboxheight=\skip114
+\mdfframetitleboxdepth=\skip115
+\mdfframetitleboxtotalheight=\skip116
+\mdffootnoteboxwidth=\skip117
+\mdffootnoteboxtotalwidth=\skip118
+\mdffootnoteboxheight=\skip119
+\mdffootnoteboxdepth=\skip120
+\mdffootnoteboxtotalheight=\skip121
+\mdftotallinewidth=\skip122
+\mdfboundingboxwidth=\skip123
+\mdfboundingboxtotalwidth=\skip124
+\mdfboundingboxheight=\skip125
+\mdfboundingboxdepth=\skip126
+\mdfboundingboxtotalheight=\skip127
+\mdf@freevspace@length=\skip128
+\mdf@horizontalwidthofbox@length=\skip129
+\mdf@verticalmarginwhole@length=\skip130
+\mdf@horizontalspaceofbox=\skip131
+\mdfsubtitleheight=\skip132
+\mdfsubsubtitleheight=\skip133
+\c@mdfcountframes=\count359
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count360
+\c@mdf@env@i=\count361
+\c@mdf@env@ii=\count362
+\c@mdf@zref@counter=\count363
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(D:\Software\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
+\MT@toks=\toks45
+\MT@tempbox=\box144
+\MT@count=\count364
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
+LaTeX Info: Redefining \leftprotrusion on input line 1088.
+\MT@prot@toks=\toks46
+LaTeX Info: Redefining \rightprotrusion on input line 1107.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen322
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count365
+
+(D:\Software\MiKTeX\tex/latex/microtype\microtype-xetex.def
+File: microtype-xetex.def 2025/02/11 v3.2a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 443.
+LaTeX Info: Redefining \lslig on input line 451.
+\MT@outer@space=\skip134
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(D:\Software\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(D:\Software\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/03/12 v0.6f Insert pages of external PDF documents (AM)
+
+(D:\Software\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(D:\Software\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count366
+\calc@Bcount=\count367
+\calc@Adimen=\dimen323
+\calc@Bdimen=\dimen324
+\calc@Askip=\skip135
+\calc@Bskip=\skip136
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count368
+\calc@Cskip=\skip137
+)
+(D:\Software\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen325
+\ESO@tempdimb=\dimen326
+)
+\AM@pagewidth=\dimen327
+\AM@pageheight=\dimen328
+\AM@fboxrule=\dimen329
+
+(D:\Software\MiKTeX\tex/latex/pdfpages\ppxetex.def
+File: ppxetex.def 2025/03/12 v0.6f Pdfpages driver for XeTeX (AM)
+)
+\pdfpages@includegraphics@status=\count369
+\AM@pagebox=\box145
+\AM@global@opts=\toks47
+\AM@pagecnt=\count370
+\AM@toc@title=\toks48
+\AM@lof@heading=\toks49
+\c@AM@survey=\count371
+\AM@templatesizebox=\box146
+)
+(D:\Software\MiKTeX\tex/latex/cancel\cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+
+Package fontspec Info: 
+(fontspec)             Font family 'SimSun(1)' created for font 'SimSun' with
+(fontspec)             options [BoldFont={},ItalicFont={},SmallCapsFont={}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimSun/OT:script=latn;language=dflt;"
+
+ (cheatsheet.aux
+(inhalt/def.aux)
+Package babel Info: 'ngerman' activates 'ngerman' shorthands.
+(babel)             Reported  on input line 7.
+)
+\openout1 = `cheatsheet.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 31.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 3
+1.
+ (D:\Software\MiKTeX\tex/latex/ly1\ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  TU/KpMath-Regular.otf(1)/m/n --> TU/KpRoman(1)/m/n on i
+nput line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/KpRoman(1)/m/it on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/KpRoman(1)/b/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/SourceSansPro-TLF/m/n on input line
+ 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/SourceSansPro-TLF/b/n on input lin
+e 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/KpMono(0)/m/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/KpMono(0)/b/n on input line 31.
+LaTeX Info: Redefining \idotsint on input line 31.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: landscape 
+* h-part:(L,W,R)=(5.69054pt, 833.66577pt, 5.69054pt)
+* v-part:(T,H,B)=(5.69054pt, 586.1268pt, 5.69054pt)
+* \paperwidth=845.04684pt
+* \paperheight=597.50787pt
+* \textwidth=833.66577pt
+* \textheight=586.1268pt
+* \oddsidemargin=-66.57945pt
+* \evensidemargin=-66.57945pt
+* \topmargin=-103.57945pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=144.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 31.
+Package microtype Info: Applying patch `item' on input line 31.
+Package microtype Info: Applying patch `toc' on input line 31.
+Package microtype Info: Applying patch `eqnum' on input line 31.
+Package microtype Info: Applying patch `footnote' on input line 31.
+Package microtype Info: Applying patch `verbatim' on input line 31.
+LaTeX Info: Redefining \microtypesetup on input line 31.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `KpRoman' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(D:\Software\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(D:\Software\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(D:\Software\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+))
+\openout2 = `inhalt/def.aux'.
+
+ (inhalt/def.tex
+\pgf@layerbox@background=\box147
+\pgf@layerboxsaved@background=\box148
+)
+
+LaTeX Font Warning: Font shape `T1/KpRoman(1)/b/n' undefined
+(Font)              using `T1/KpRoman(1)/m/n' instead on input line 35.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `KpMath-Regular.otf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'C'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c C'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v C'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'c'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c c'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v c'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v D'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+Package microtype Info: Character `\DH ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v d'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+Package microtype Info: Character `\dj ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u G'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u g'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`i'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'i'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^i'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"i'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+Package microtype Info: Character `\L ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'L'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v L'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+Package microtype Info: Character `\l ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'l'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v l'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'N'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~N'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v N'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'n'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~n'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v n'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+Package microtype Info: Character `\O ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+Package microtype Info: Character `\o ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\~o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'R'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v R'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'r'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v r'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c T'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v T'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c t'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v t'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\`u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\^u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'Y'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"Y'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'y'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"y'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/KpMath-Regular.otf(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 35.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/KpMath-Regular.otf(2)/m/n' will be
+(Font)              scaled to size 5.00053pt on input line 35.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/KpMath-Regular.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 35.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/KpMath-Regular.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 35.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/7'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/5'.
+(microtype)             Ignoring protrusion settings for this character.
+(inhalt/人智原1.tex
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Microsoft YaHei Bold/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Microsoft YaHei/I" (it probably
+(fontspec)             doesn't exist).
+
+LaTeX Font Info:    Trying to load font information for T1+SourceSansPro-TLF on
+ input line 4.
+
+(D:\Software\MiKTeX\tex/latex/sourcesanspro\t1sourcesanspro-tlf.fd
+File: T1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for T1/Sour
+ceSansPro-TLF.
+)
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 4.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 4.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `SourceSansPro-TLF' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Package fontspec Info: 
+(fontspec)             Font family 'MicrosoftYaHei(0)' created for font
+(fontspec)             'Microsoft YaHei' with options
+(fontspec)             [Script={CJK},BoldFont={* Bold}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Microsoft
+(fontspec)             YaHei/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Microsoft YaHei
+(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Microsoft
+(fontspec)             YaHei/BI/OT:script=hani;language=dflt;"
+
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 4.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 6.0pt on input line 4.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 4.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 7.0pt on input line 4.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 4.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 7.0pt on input line 4.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(1)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/KpMath-Regular.otf(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 20.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(2)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `TU/KpMath-Regular.otf(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 20.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(3)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `~ (= ~)' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `*' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquoteright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquotedblright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\AE ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `_' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotesinglbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\quotedblbase ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guilsinglright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotleft ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\guillemotright ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textexclamdown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Character `\textquestiondown ' is missing
+(microtype)             in font `\TU/KpMath-Regular.otf(4)/m/n/6'.
+(microtype)             Ignoring protrusion settings for this character.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `KpRoman' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+File: image01.png Graphic file (type bmp)
+<image01.png>
+File: image02.png Graphic file (type bmp)
+<image02.png>
+File: image03.png Graphic file (type bmp)
+<image03.png>
+File: image19.png Graphic file (type bmp)
+<image19.png>
+File: image04.png Graphic file (type bmp)
+<image04.png>
+File: image05.png Graphic file (type bmp)
+<image05.png>
+File: image06.png Graphic file (type bmp)
+<image06.png>
+File: image07.png Graphic file (type bmp)
+<image07.png>
+ [1
+
+
+
+
+]
+File: image08.png Graphic file (type bmp)
+<image08.png>
+File: image09.png Graphic file (type bmp)
+<image09.png>
+File: image10.png Graphic file (type bmp)
+<image10.png>
+
+Overfull \hbox (2.66003pt too wide) in paragraph at lines 478--486
+[]  []
+ []
+
+File: image11.png Graphic file (type bmp)
+<image11.png>
+
+Overfull \hbox (1.12698pt too wide) in paragraph at lines 549--550
+[]\TU/SimSun(0)/b/n/6 策 略 改 进\TU/SimSun(0)/m/n/6 ：| $[][][][][] [] [] [][] []$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
+[]\TU/SimSun(0)/b/n/6 首 次 访 问 蒙 特 卡 洛\TU/SimSun(0)/m/n/6 ：|  根 据 待 评 价 策 略 产 生 
+观 测 片 段
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 601--602
+[]\TU/SimSun(0)/b/n/6 行 动 价 值 迭 代 $[][][][][][] [][][] [] [][][][][][] [][][] [
+] [][][][][] []
+ []
+
+File: image12.png Graphic file (type bmp)
+<image12.png>
+File: image13.png Graphic file (type bmp)
+<image13.png>
+File: image14.png Graphic file (type bmp)
+<image14.png>
+
+Overfull \hbox (2.66003pt too wide) in paragraph at lines 622--630
+[]  []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
+[]\T1/KpRoman(1)/m/n/6 2. \TU/SimSun(0)/b/n/6 优 化 目 标\TU/SimSun(0)/m/n/6 ：| $[]
+[][][] [] [] [] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
+[][] [][][][] [][]$\TU/SimSun(0)/m/n/6 ，|  其 中 $[][][][]$ 是 状 态 服 从 的 分
+ []
+
+
+Overfull \hbox (4.56078pt too wide) in paragraph at lines 646--647
+[]\TU/SimSun(0)/m/n/6 时 分 $[][] [] [][] [] [][] [] [][][] []$ 
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 658--659
+[]\T1/KpRoman(1)/m/n/7 SARSA$ [][] [] [][] [] [][][][][] [] [][][][][] [][][] [
+][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 669--670
+[][] [][][][][][][] [][] [] [][] [] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--674
+[]\T1/KpRoman(1)/m/n/6 REINFORCE \TU/SimSun(0)/b/n/6 算 法\TU/SimSun(0)/m/n/6 ：| 
+ 蒙 特 卡 洛 对 状 态 和 行 动 都 采 样，|  基
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--674
+\TU/SimSun(0)/m/n/6 于 当 前 策 略 $[] []$ 与 环 境 交 互，|  采 样 产 生 序 列
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--674
+[][][] [][][] [][][] [] [] [][][] [][][] [][][] [] [] [][][] [][][] [][]$\TU/Si
+mSun(0)/m/n/6 ，|  利 用 该 序 列 估
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--676
+[]\TU/SimSun(0)/m/n/6 等 价 形 式：| $[][][][] [] [][][] [][][] [] [][][][] [] [][][
+] [][][] []
+ []
+
+
+Underfull \hbox (badness 5847) in paragraph at lines 675--676
+[][][][] [][]$\TU/SimSun(0)/m/n/6 ，|  其 中 $[][] [] []$ |— —|  鼓 励
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 684--685
+[]$[][][][][][] [] [][] [] []
+ []
+
+File: image15.png Graphic file (type bmp)
+<image15.png>
+File: image16.png Graphic file (type bmp)
+<image16.png>
+File: image18.png Graphic file (type bmp)
+<image18.png>
+File: image17.png Graphic file (type bmp)
+<image17.png>
+) [2] (cheatsheet.aux (inhalt/def.aux))
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2022/07/14>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 33179 strings out of 408640
+ 726453 string characters out of 5750180
+ 1446508 words of memory out of 5000000
+ 55631 multiletter control sequences out of 15000+600000
+ 609984 words of font info for 116 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 115i,11n,135p,1009b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on cheatsheet.pdf (2 pages).

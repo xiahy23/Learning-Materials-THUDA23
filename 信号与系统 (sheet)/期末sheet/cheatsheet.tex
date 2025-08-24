@@ -1,0 +1,40 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{ctex}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{graphics}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{shapes,positioning,arrows,fit,calc,graphs,graphs.standard}
+\usepackage[nosf]{kpfonts}
+\usepackage[t1]{sourcesanspro}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{makecell}
+\usepackage[top=2mm,bottom=2mm,left=2mm,right=2mm]{geometry}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{microtype}
+\usepackage{pdfpages}
+\usepackage{cancel}
+\usepackage[document]{ragged2e}
+\let\bar\overline
+\newfontface\CJKfont{SimSun}
+\setlength{\columnsep}{4pt} % 设置栏间距
+\setlength{\columnseprule}{0.2pt}
+\setlength{\parskip}{2pt}
+\setlist{topsep=0em,itemsep=-0.5em, labelsep=0em, leftmargin=1.5em}
+
+\sloppy
+\begin{document}
+\include{inhalt/def}
+\scriptsize
+\begin{multicols*}{4}
+\centerline{\textbf{信号与系统分析知识点汇总~~$2025.6$~~edit by xhy}}
+\fontsize{6pt}{7pt}
+\input{inhalt/信号与系统分析}
+\end{multicols*}
+\end{document}
